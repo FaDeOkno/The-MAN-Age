@@ -194,7 +194,6 @@ GameObject:
   - component: {fileID: 6140928938014850233}
   - component: {fileID: 5765991655631946441}
   - component: {fileID: 6727186187641723703}
-  - component: {fileID: 205602430134497773}
   m_Layer: 0
   m_Name: Visitor
   m_TagString: Untagged
@@ -294,9 +293,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Visitor
   LayerPrefab: {fileID: 2298985726463690836, guid: 863614f6a9bf88940b3245c341cd0b34, type: 3}
+  VisitorEnteredEvent: {fileID: 11400000, guid: 4f8c6642e3cca074db24d517a8dd8e0b, type: 2}
   Species: {fileID: 0}
   Age: 0
-  DragToApprove: 40
+  DragToApprove: 15
 --- !u!61 &6727186187641723703
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -343,52 +343,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 7.9142857, y: 11.485714}
   m_EdgeRadius: 0
---- !u!114 &205602430134497773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7244033535008402025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
-  m_Actions: {fileID: -944628639613478452, guid: 29ad3ed7d94868e4185605b6f32a6989, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5765991655631946441}
-        m_TargetAssemblyTypeName: Visitor, Assembly-CSharp
-        m_MethodName: GetMouseDelta
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 49d6ca19-f166-49ea-acd2-ddc6d9d03dfc
-    m_ActionName: 'Gameplay/MouseDelta[/Mouse/delta]'
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Gameplay
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!1 &7982360320382281714
 GameObject:
   m_ObjectHideFlags: 0
