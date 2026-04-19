@@ -7,6 +7,8 @@ using UnityEngine.EventSystems;
 public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerMoveHandler
 {
     public GameObject LayerPrefab;
+    public GameEvent VisitorEnteredEvent;
+
     public Species Species;
     public int Age;
     public float DragToApprove = 1.5f;
@@ -84,9 +86,24 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
         }
     }
 
-    public void PlaySpawnAnimation(Vector2 startPos, Vector2 endPos)
+    public void PlaySpawnAnimation(Vector2 startPos, Vector2 endPos, TweenCallback onComplete = null)
     {
         transform.position = startPos;
-        transform.DOMove(endPos, 1.2f).SetEase(Ease.OutBack).OnComplete(() => InteractionAllowed = true);
+        transform.DOMove(endPos, 1.2f).SetEase(Ease.OutBack)
+            .OnComplete(() =>
+            {
+                InteractionAllowed = true;
+                onComplete?.Invoke();
+                VisitorEnteredEvent.Raise(this, null);
+            });
+    }
+
+    public void FadeColor(float duration = 1.5f)
+    {
+        foreach (var layer in _faceLayers)
+        {
+            layer.DOColor(Color.black, duration).SetEase(Ease.InQuad);
+        }
+        GetComponent<SpriteRenderer>().DOColor(Color.black, duration).SetEase(Ease.InQuad);
     }
 }
