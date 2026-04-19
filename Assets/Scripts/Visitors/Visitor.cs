@@ -2,10 +2,9 @@ using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.Rendering;
+using UnityEngine.EventSystems;
 
-public class Visitor : MonoBehaviour
+public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerMoveHandler
 {
     public GameObject LayerPrefab;
     public Species Species;
@@ -19,13 +18,13 @@ public class Visitor : MonoBehaviour
     private bool _isDragging = false;
     private float _draggedDistance = 0f;
 
-    void OnMouseDown()
+    public void OnPointerDown(PointerEventData eventData)
     {
         _isDragging = true;
         Debug.Log($"Clicked on visitor with age {Age}");
     }
 
-    void OnMouseUp()
+    public void OnPointerUp(PointerEventData eventData)
     {
         Debug.Log($"Dragged distance: {_draggedDistance}");
         _isDragging = false;
@@ -44,12 +43,12 @@ public class Visitor : MonoBehaviour
         GameManager.Instance.VisitorApprove();
     }
 
-    public void GetMouseDelta(InputAction.CallbackContext context)
+    public void OnPointerMove(PointerEventData eventData)
     {
         if (!_isDragging || !InteractionAllowed)
             return;
 
-        var delta = context.ReadValue<Vector2>();
+        var delta = eventData.delta;
         _draggedDistance = Mathf.Clamp(_draggedDistance - (delta.x * .1f), -1, 100);
     }
 
