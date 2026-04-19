@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
 
     public void VisitorApprove()
     {
-        _currentVisitor.transform.DOMoveX(_currentVisitor.transform.position.x - 8, 1.5f).SetEase(Ease.InQuad)
+        _currentVisitor.transform.DOMoveX(_currentVisitor.transform.position.x - 16, 1.5f).SetEase(Ease.InQuad)
             .OnComplete(() =>
             {
                 Destroy(_currentVisitor.gameObject);

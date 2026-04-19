@@ -27,13 +27,17 @@ public class Visitor : MonoBehaviour
 
     void OnMouseUp()
     {
+        Debug.Log($"Dragged distance: {_draggedDistance}");
         _isDragging = false;
+
+        var distance = _draggedDistance;
+
         _draggedDistance = 0f;
 
         if (!InteractionAllowed)
             return;
 
-        if (_draggedDistance < DragToApprove)
+        if (distance < DragToApprove)
             return;
 
         Debug.Log("Approved visitor");
@@ -46,7 +50,7 @@ public class Visitor : MonoBehaviour
             return;
 
         var delta = context.ReadValue<Vector2>();
-        _draggedDistance = Mathf.Clamp(_draggedDistance - delta.x, -100, 1);
+        _draggedDistance = Mathf.Clamp(_draggedDistance - (delta.x * .1f), -1, 100);
     }
 
     public void Generate(System.Random random, Species species)
