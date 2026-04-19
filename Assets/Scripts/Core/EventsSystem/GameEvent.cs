@@ -26,6 +26,7 @@ public class GameEvent : ScriptableObject
     }
 }
 
+[System.Serializable]
 public class CustomGameEvent : UnityEvent<Component, object>
 {
 }
