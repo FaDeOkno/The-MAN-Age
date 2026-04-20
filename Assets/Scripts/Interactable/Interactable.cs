@@ -33,6 +33,8 @@ public class Interactable : MonoBehaviour, IPointerEnterHandler, IPointerDownHan
         if (_cooldownTimer > 0)
             return;
 
+        _cooldownTimer = _cooldown;
+
         _animator.Play("ButtonPress");
         _onInteractEvent.Raise(this, null);
     }
