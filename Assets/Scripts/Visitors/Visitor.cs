@@ -3,6 +3,7 @@ using System.Linq;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerMoveHandler
 {
@@ -11,6 +12,8 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
 
     public Species Species;
     public int Age;
+    public int Seed;
+
     public float DragToApprove = 1.5f;
 
     public bool IsValid { get; private set; }
@@ -54,8 +57,12 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
         _draggedDistance = Mathf.Clamp(_draggedDistance - (delta.x * .1f), -1, 100);
     }
 
-    public void Generate(System.Random random, Species species)
+    public void Generate(int seed, Species species)
     {
+        var random = new System.Random(seed);
+        Seed = seed;
+        Species = species;
+
         foreach (var item in _faceLayers.Union(GetComponentsInChildren<SpriteRenderer>().Except(new[] { GetComponent<SpriteRenderer>() })))
         {
             Destroy(item.gameObject);
@@ -94,7 +101,8 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
             {
                 InteractionAllowed = true;
                 onComplete?.Invoke();
-                VisitorEnteredEvent.Raise(this, null);
+                VisitorEnteredEvent.Raise(this, this);
+                Debug.Log($"Visitor entered with age {Age} and seed {Seed}");
             });
     }
 
@@ -105,5 +113,25 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
             layer.DOColor(Color.black, duration).SetEase(Ease.InQuad);
         }
         GetComponent<SpriteRenderer>().DOColor(Color.black, duration).SetEase(Ease.InQuad);
+    }
+
+    public static GameObject BuildPseudoVisitor(int seed, int renderDepth, int sortingLayer, Species species, GameObject layerPrefab)
+    {
+        var random = new System.Random(seed);
+        var visitorObj = new GameObject("PseudoVisitor");
+        SceneManager.MoveGameObjectToScene(visitorObj, SceneManager.GetActiveScene());
+
+        for (var i = 0; i < species.FaceLayers.Count; i++)
+        {
+            var sprite = random.Pick(species.FaceLayers[i].Sprites);
+            var layer = Instantiate(layerPrefab, visitorObj.transform);
+            var renderer = layer.GetComponent<SpriteRenderer>();
+
+            renderer.sprite = sprite;
+            renderer.sortingOrder = renderDepth + i + 1;
+            renderer.sortingLayerID = sortingLayer;
+        }
+
+        return visitorObj;
     }
 }

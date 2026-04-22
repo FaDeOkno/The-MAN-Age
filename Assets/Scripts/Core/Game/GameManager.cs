@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     private int _curDay = 0;
     private int _mistakes = 0;
     private System.Random _random;
+    private int _seed;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -40,7 +41,8 @@ public class GameManager : MonoBehaviour
     public void NextVisitorOrEndDay()
     {
         _curVisitorIndex++;
-        _random = new System.Random(Seed + _curVisitorIndex + (_curDay * _visitorsCap));
+        _seed = Seed + _curVisitorIndex + (_curDay * _visitorsCap);
+        _random = new System.Random(_seed);
 
         if (_curVisitorIndex <= _visitorsCap)
         {
@@ -57,7 +59,7 @@ public class GameManager : MonoBehaviour
         var visitor = Instantiate(VisitorPrefab, _gameplayTransform).GetComponent<Visitor>();
         _currentVisitor = visitor;
 
-        visitor.Generate(_random, _random.Pick(_species));
+        visitor.Generate(_seed, _random.Pick(_species));
         visitor.PlaySpawnAnimation(_spawnOffset, _characterOffset, () => _isFading = false);
     }
 

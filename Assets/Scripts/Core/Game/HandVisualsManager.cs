@@ -7,7 +7,7 @@ public class HandVisualsManager : MonoBehaviour
     [SerializeField] private GameEvent _setActiveEvent;
     [SerializeField] private GameEvent _setInactiveEvent;
 
-    private HandAnimation _currentAnimation = HandAnimation.None;
+    public HandAnimation CurrentAnimation { get; private set; } = HandAnimation.None;
     private bool _awaitingAnimationFinish = false;
     private bool _hasId = false;
 
@@ -46,16 +46,16 @@ public class HandVisualsManager : MonoBehaviour
 
     public void PlayAnimation(HandAnimation animation)
     {
-        if (_currentAnimation == animation)
+        if (CurrentAnimation == animation)
             return;
 
         if (_awaitingAnimationFinish)
             return;
 
-        _setInactiveEvent.Raise(this, _currentAnimation);
+        _setInactiveEvent.Raise(this, CurrentAnimation);
         _setActiveEvent.Raise(this, animation);
 
-        _currentAnimation = animation;
+        CurrentAnimation = animation;
         _awaitingAnimationFinish = true;
     }
 
@@ -66,7 +66,7 @@ public class HandVisualsManager : MonoBehaviour
 
         _awaitingAnimationFinish = false;
 
-        if (_currentAnimation == HandAnimation.GettingId)
+        if (CurrentAnimation == HandAnimation.GettingId)
         {
             Debug.Log("Got ID");
             _hasId = true;
