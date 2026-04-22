@@ -5,6 +5,7 @@ public class HandVisualsManager : MonoBehaviour
     public static HandVisualsManager Instance { get; private set; }
 
     [SerializeField] private Animator _gettingIdHand;
+    [SerializeField] private Animator _startShowingIdHand;
     [SerializeField] private Animator _showingIdHand;
     [SerializeField] private Animator _showingNewsHand;
 
@@ -71,7 +72,7 @@ public class HandVisualsManager : MonoBehaviour
                 _gettingIdHand.Play("GetId");
                 break;
             case HandAnimation.ShowingId:
-                _showingIdHand.SetBool("IsActive", true);
+                _startShowingIdHand.SetBool("IsActive", true);
                 break;
             case HandAnimation.ShowingNews:
                 _showingNewsHand.SetBool("IsActive", true);
@@ -86,6 +87,9 @@ public class HandVisualsManager : MonoBehaviour
 
     public void OnAnimationFinished()
     {
+        if (!_awaitingAnimationFinish)
+            return;
+
         _awaitingAnimationFinish = false;
 
         if (_currentAnimation == HandAnimation.GettingId)
@@ -93,6 +97,13 @@ public class HandVisualsManager : MonoBehaviour
             Debug.Log("Got ID");
             _hasId = true;
             PlayAnimation(HandAnimation.ShowingId);
+        }
+        else if (_currentAnimation == HandAnimation.ShowingId)
+        {
+            _startShowingIdHand.SetBool("IsActive", false);
+            _startShowingIdHand.Play("NoHand");
+
+            _showingIdHand.SetBool("IsActive", true);
         }
     }
 }
