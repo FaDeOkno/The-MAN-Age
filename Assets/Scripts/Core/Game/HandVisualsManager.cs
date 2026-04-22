@@ -4,10 +4,8 @@ public class HandVisualsManager : MonoBehaviour
 {
     public static HandVisualsManager Instance { get; private set; }
 
-    [SerializeField] private Animator _gettingIdHand;
-    [SerializeField] private Animator _startShowingIdHand;
-    [SerializeField] private Animator _showingIdHand;
-    [SerializeField] private Animator _showingNewsHand;
+    [SerializeField] private GameEvent _setActiveEvent;
+    [SerializeField] private GameEvent _setInactiveEvent;
 
     private HandAnimation _currentAnimation = HandAnimation.None;
     private bool _awaitingAnimationFinish = false;
@@ -54,32 +52,8 @@ public class HandVisualsManager : MonoBehaviour
         if (_awaitingAnimationFinish)
             return;
 
-        switch (_currentAnimation)
-        {
-            case HandAnimation.ShowingId:
-                _showingIdHand.SetBool("IsActive", false);
-                break;
-            case HandAnimation.ShowingNews:
-                _showingNewsHand.SetBool("IsActive", false);
-                break;
-            default:
-                break;
-        }
-
-        switch (animation)
-        {
-            case HandAnimation.GettingId:
-                _gettingIdHand.Play("GetId");
-                break;
-            case HandAnimation.ShowingId:
-                _startShowingIdHand.SetBool("IsActive", true);
-                break;
-            case HandAnimation.ShowingNews:
-                _showingNewsHand.SetBool("IsActive", true);
-                break;
-            default:
-                break;
-        }
+        _setInactiveEvent.Raise(this, _currentAnimation);
+        _setActiveEvent.Raise(this, animation);
 
         _currentAnimation = animation;
         _awaitingAnimationFinish = true;
@@ -97,13 +71,6 @@ public class HandVisualsManager : MonoBehaviour
             Debug.Log("Got ID");
             _hasId = true;
             PlayAnimation(HandAnimation.ShowingId);
-        }
-        else if (_currentAnimation == HandAnimation.ShowingId)
-        {
-            _startShowingIdHand.SetBool("IsActive", false);
-            _startShowingIdHand.Play("NoHand");
-
-            _showingIdHand.SetBool("IsActive", true);
         }
     }
 }
