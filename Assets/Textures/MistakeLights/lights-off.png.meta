@@ -1,0 +1,1300 @@
+fileFormatVersion: 2
+guid: 5129d10ef7b099f408cfb29f02e2ae7b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6987713475680343369
+    second: lights-off_0
+  - first:
+      213: -7490738115881609046
+    second: lights-off_1
+  - first:
+      213: 2021571962886014914
+    second: lights-off_2
+  - first:
+      213: -4435600380953648097
+    second: lights-off_3
+  - first:
+      213: -4680976395232742202
+    second: lights-off_4
+  - first:
+      213: -7102826960048933170
+    second: lights-off_5
+  - first:
+      213: -3758552983358241814
+    second: lights-off_6
+  - first:
+      213: -9088880440504498248
+    second: lights-off_7
+  - first:
+      213: -6103393577043477315
+    second: lights-off_8
+  - first:
+      213: -4013034219633267601
+    second: lights-off_9
+  - first:
+      213: -8833257653664661367
+    second: lights-off_10
+  - first:
+      213: 5121937371509741078
+    second: lights-off_11
+  - first:
+      213: 1090404274765636673
+    second: lights-off_12
+  - first:
+      213: 7988720851382753972
+    second: lights-off_13
+  - first:
+      213: 5984176486801970513
+    second: lights-off_14
+  - first:
+      213: -8957492380493683489
+    second: lights-off_15
+  - first:
+      213: -3436791159191686813
+    second: lights-off_16
+  - first:
+      213: -2101785470929390544
+    second: lights-off_17
+  - first:
+      213: -3003139781843004057
+    second: lights-off_18
+  - first:
+      213: 6857164290470641130
+    second: lights-off_19
+  - first:
+      213: -2721127459950886017
+    second: lights-off_20
+  - first:
+      213: -8012515215343108680
+    second: lights-off_21
+  - first:
+      213: -658934719797428406
+    second: lights-off_22
+  - first:
+      213: 2222113560911981130
+    second: lights-off_23
+  - first:
+      213: 4257537325619030025
+    second: lights-off_24
+  - first:
+      213: -8011464095909940292
+    second: lights-off_25
+  - first:
+      213: -1980934742376196665
+    second: lights-off_26
+  - first:
+      213: -5982052351311675229
+    second: lights-off_27
+  - first:
+      213: 3881682665143362032
+    second: lights-off_28
+  - first:
+      213: 1270744271623088369
+    second: lights-off_29
+  - first:
+      213: 8176938628681934603
+    second: lights-off_30
+  - first:
+      213: -2062451637144393963
+    second: lights-off_31
+  - first:
+      213: 1007915109404625979
+    second: lights-off_32
+  - first:
+      213: 8188717727480550463
+    second: lights-off_33
+  - first:
+      213: 9162011975230057077
+    second: lights-off_34
+  - first:
+      213: 6991508652210916813
+    second: lights-off_35
+  - first:
+      213: 6407213142125177500
+    second: lights-off_36
+  - first:
+      213: -6309347045147184072
+    second: lights-off_37
+  - first:
+      213: 1485851493440751373
+    second: lights-off_38
+  - first:
+      213: 1109271994289729575
+    second: lights-off_39
+  - first:
+      213: 3363749399713214455
+    second: lights-off_40
+  - first:
+      213: 2592929925403170226
+    second: lights-off_41
+  - first:
+      213: -2997215126932027803
+    second: lights-off_42
+  - first:
+      213: -6278821482390589176
+    second: lights-off_43
+  - first:
+      213: -4396808120107226804
+    second: lights-off_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lights-off_0
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 180
+        width: 1246
+        height: 1472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7baecd9cd97a60f90800000000000000
+      internalID: -6987713475680343369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_1
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1317
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa8d5690f5d8b0890800000000000000
+      internalID: -7490738115881609046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_2
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 1317
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c7c5bf4df01e0c10800000000000000
+      internalID: 2021571962886014914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_3
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 1479
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14abaf44f49172c0800000000000000
+      internalID: -4435600380953648097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_4
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 193
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4f928f4c4d90fb0800000000000000
+      internalID: -4680976395232742202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_5
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 1250
+        width: 124
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec637312380bd6d90800000000000000
+      internalID: -7102826960048933170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_6
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 1258
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae3827da9ffe6dbc0800000000000000
+      internalID: -3758552983358241814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_7
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 991
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b7cbb1f46fcdd180800000000000000
+      internalID: -9088880440504498248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_8
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 1403
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc3cebf0e36c4ba0800000000000000
+      internalID: -6103393577043477315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_9
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 1388
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6ca543a3a6de48c0800000000000000
+      internalID: -4013034219633267601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_10
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 1372
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98041dfe6f6f96580800000000000000
+      internalID: -8833257653664661367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_11
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 1358
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 616d2a6f6e6c41740800000000000000
+      internalID: 5121937371509741078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_12
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 1342
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14429f229e4e12f00800000000000000
+      internalID: 1090404274765636673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_13
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 1327
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4badc6cc943adde60800000000000000
+      internalID: 7988720851382753972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_14
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1394
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15593192fc01c0350800000000000000
+      internalID: 5984176486801970513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_15
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 1143
+        width: 128
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd4e766832890b380800000000000000
+      internalID: -8957492380493683489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_16
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 1175
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3613d2d46a01e40d0800000000000000
+      internalID: -3436791159191686813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_17
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 852
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0343d2bff35f4d2e0800000000000000
+      internalID: -2101785470929390544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_18
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1156
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 765576c9744b256d0800000000000000
+      internalID: -3003139781843004057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_19
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 1257
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aedfef3679a892f50800000000000000
+      internalID: 6857164290470641130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_20
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 1387
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7301190efc9c3ad0800000000000000
+      internalID: -2721127459950886017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_21
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 1402
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bdbf002dd3ddc090800000000000000
+      internalID: -8012515215343108680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_22
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 1371
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4f7d401d5efad6f0800000000000000
+      internalID: -658934719797428406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_23
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 1356
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4aacb8a28886de10800000000000000
+      internalID: 2222113560911981130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_24
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 1341
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9082d77e3afc51b30800000000000000
+      internalID: 4257537325619030025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_25
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 1326
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb3fd70f9df81d090800000000000000
+      internalID: -8011464095909940292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_26
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 1311
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c5df65e85e4284e0800000000000000
+      internalID: -1980934742376196665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_27
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 1043
+        width: 133
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a0074ca41b7bfca0800000000000000
+      internalID: -5982052351311675229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_28
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 355
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f169a261d18ed530800000000000000
+      internalID: 3881682665143362032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_29
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 180
+        width: 1010
+        height: 1472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f8e47eae2792a110800000000000000
+      internalID: 1270744271623088369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_30
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 487
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07a1c80c525a7170800000000000000
+      internalID: 8176938628681934603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_31
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 799
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517e591d923b063e0800000000000000
+      internalID: -2062451637144393963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_32
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 1256
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3ccfcba375dcfd00800000000000000
+      internalID: 1007915109404625979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_33
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 1401
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f341c60336b24a170800000000000000
+      internalID: 8188717727480550463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_34
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 1386
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a667b5951062f70800000000000000
+      internalID: 9162011975230057077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_35
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 1371
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcd0a1b9314d60160800000000000000
+      internalID: 6991508652210916813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_36
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 1324
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ae598e76efae850800000000000000
+      internalID: 6407213142125177500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_37
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 1090
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83477517a42b078a0800000000000000
+      internalID: -6309347045147184072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_38
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 486
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0705879f0ece9410800000000000000
+      internalID: 1485851493440751373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_39
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 843
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 720bdea600de46f00800000000000000
+      internalID: 1109271994289729575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_40
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 593
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ffe653d1407eae20800000000000000
+      internalID: 3363749399713214455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_41
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 745
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b5d22b7700fbf320800000000000000
+      internalID: 2592929925403170226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_42
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 1142
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5660ac3d8b0c766d0800000000000000
+      internalID: -2997215126932027803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_43
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 269
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801740ed0252dd8a0800000000000000
+      internalID: -6278821482390589176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lights-off_44
+      rect:
+        serializedVersion: 2
+        x: 2319
+        y: 1251
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c49a47f5f466bf2c0800000000000000
+      internalID: -4396808120107226804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      lights-off_0: -6987713475680343369
+      lights-off_1: -7490738115881609046
+      lights-off_10: -8833257653664661367
+      lights-off_11: 5121937371509741078
+      lights-off_12: 1090404274765636673
+      lights-off_13: 7988720851382753972
+      lights-off_14: 5984176486801970513
+      lights-off_15: -8957492380493683489
+      lights-off_16: -3436791159191686813
+      lights-off_17: -2101785470929390544
+      lights-off_18: -3003139781843004057
+      lights-off_19: 6857164290470641130
+      lights-off_2: 2021571962886014914
+      lights-off_20: -2721127459950886017
+      lights-off_21: -8012515215343108680
+      lights-off_22: -658934719797428406
+      lights-off_23: 2222113560911981130
+      lights-off_24: 4257537325619030025
+      lights-off_25: -8011464095909940292
+      lights-off_26: -1980934742376196665
+      lights-off_27: -5982052351311675229
+      lights-off_28: 3881682665143362032
+      lights-off_29: 1270744271623088369
+      lights-off_3: -4435600380953648097
+      lights-off_30: 8176938628681934603
+      lights-off_31: -2062451637144393963
+      lights-off_32: 1007915109404625979
+      lights-off_33: 8188717727480550463
+      lights-off_34: 9162011975230057077
+      lights-off_35: 6991508652210916813
+      lights-off_36: 6407213142125177500
+      lights-off_37: -6309347045147184072
+      lights-off_38: 1485851493440751373
+      lights-off_39: 1109271994289729575
+      lights-off_4: -4680976395232742202
+      lights-off_40: 3363749399713214455
+      lights-off_41: 2592929925403170226
+      lights-off_42: -2997215126932027803
+      lights-off_43: -6278821482390589176
+      lights-off_44: -4396808120107226804
+      lights-off_5: -7102826960048933170
+      lights-off_6: -3758552983358241814
+      lights-off_7: -9088880440504498248
+      lights-off_8: -6103393577043477315
+      lights-off_9: -4013034219633267601
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
