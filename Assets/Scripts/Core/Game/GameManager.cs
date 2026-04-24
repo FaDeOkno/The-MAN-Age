@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int _mistakeCap = 3;
     [SerializeField] private GameObject VisitorPrefab;
     [SerializeField] private GameEvent VisitorCheckedEvent;
+    [SerializeField] private GameEvent MistakeEvent;
+
     [SerializeField] private Transform _gameplayTransform;
     [SerializeField] private Species[] _species;
 
@@ -76,6 +78,9 @@ public class GameManager : MonoBehaviour
         _currentVisitor.transform.DOMoveX(_currentVisitor.transform.position.x - 16, 2f).SetEase(Ease.InQuad)
             .OnComplete(() =>
             {
+                if (!_currentVisitor.IsValid)
+                    DoMistake();
+
                 Destroy(_currentVisitor.gameObject);
                 NextVisitorOrEndDay();
             });
@@ -93,6 +98,9 @@ public class GameManager : MonoBehaviour
         _currentVisitor.transform.DOMoveX(_currentVisitor.transform.position.x + 16, 2f).SetEase(Ease.InQuad)
             .OnComplete(() =>
             {
+                if (_currentVisitor.IsValid)
+                    DoMistake();
+
                 Destroy(_currentVisitor.gameObject);
                 NextVisitorOrEndDay();
             });
@@ -109,6 +117,12 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Day ended!");
         // Implement end of day logic here (e.g., show summary, reset for next day, etc.)
+    }
+
+    private void DoMistake()
+    {
+        _mistakes++;
+        MistakeEvent.Raise(this, _mistakes);
     }
 }
 
