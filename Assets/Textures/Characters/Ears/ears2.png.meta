@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 52417ed70bc5b044caf55ed86de97205
+guid: 1d77bed389951a8428633b5d29435974
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1236575898192437106
-    second: ears1_0
+      213: -1348538467443531755
+    second: ears2_0
   - first:
-      213: 8418367279955111505
-    second: ears1_1
+      213: 1037137283772554219
+    second: ears2_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ears1_0
+      name: ears2_1
       rect:
         serializedVersion: 2
         x: 0
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e802e62b5ccc6dee0800000000000000
-      internalID: -1236575898192437106
+      spriteID: beb93965dd6a46e00800000000000000
+      internalID: 1037137283772554219
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c37bac457a5a0484f9ed2b44f208c70a
+    spriteID: 785149e9d9e8a8a4aa65bddf69ce8424
     internalID: 0
     vertices: []
     indices: 
@@ -151,8 +151,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ears1_0: -1236575898192437106
-      ears1_1: 8418367279955111505
+      ears2_0: -1348538467443531755
+      ears2_1: 1037137283772554219
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

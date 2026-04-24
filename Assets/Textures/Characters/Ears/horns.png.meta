@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: 2b475d8855b01ec40abaf717cd1b30cd
+guid: 5cb15f45994f32e4f9303f9f334bae34
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7519787493405742422
-    second: eyes2_0
+      213: -1457831766178570216
+    second: horns_0
   - first:
-      213: 3455716762092047183
-    second: eyes2_1
-  - first:
-      213: 2023631205568816875
-    second: eyes2_2
-  - first:
-      213: -7543945403061455863
-    second: eyes2_3
+      213: -7415311056671595591
+    second: horns_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -122,23 +116,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: eyes2_3
+      name: horns_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 556
-        height: 804
+        x: 164
+        y: 478
+        width: 65
+        height: 118
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 904b49d10a58e4790800000000000000
-      internalID: -7543945403061455863
+      spriteID: 81065aa8bbdb4cbe0800000000000000
+      internalID: -1457831766178570216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horns_1
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 487
+        width: 60
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b32018c1e5871990800000000000000
+      internalID: -7415311056671595591
       vertices: []
       indices: 
       edges: []
@@ -147,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5bb68c6cd78a9404aa030bd454c6461b
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -157,10 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      eyes2_0: -7519787493405742422
-      eyes2_1: 3455716762092047183
-      eyes2_2: 2023631205568816875
-      eyes2_3: -7543945403061455863
+      horns_0: -1457831766178570216
+      horns_1: -7415311056671595591
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

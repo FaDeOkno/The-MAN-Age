@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 9fe432b01add39a44880b01d4696ec23
+guid: 8eae76fd0d97a0f46b8869c3a718bc6b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7946741686711457174
-    second: mouth2_0
+      213: 7562744953920968480
+    second: eyes9_0
   - first:
-      213: 5315574784355343132
-    second: mouth2_1
-  - first:
-      213: 7327422470654816996
-    second: mouth2_2
+      213: -4346869927375255498
+    second: eyes9_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -119,23 +116,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mouth2_2
+      name: eyes9_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 556
-        height: 804
+        x: 251
+        y: 457
+        width: 12
+        height: 98
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e2789a2aeb30b560800000000000000
-      internalID: 7327422470654816996
+      spriteID: 0275659677444f860800000000000000
+      internalID: 7562744953920968480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyes9_1
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 459
+        width: 11
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63848fde4d0dca3c0800000000000000
+      internalID: -4346869927375255498
       vertices: []
       indices: 
       edges: []
@@ -144,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f2b0e193eac981346b00597ab5e538be
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -154,9 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      mouth2_0: 7946741686711457174
-      mouth2_1: 5315574784355343132
-      mouth2_2: 7327422470654816996
+      eyes9_0: 7562744953920968480
+      eyes9_1: -4346869927375255498
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

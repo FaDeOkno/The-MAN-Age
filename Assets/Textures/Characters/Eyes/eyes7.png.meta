@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: aae666796a844224091fe521a1495cd3
+guid: 81871893071190042931f94fddde2119
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7656974713994529759
-    second: mouth1_0
+      213: -4357025878689883310
+    second: eyes7_0
+  - first:
+      213: -4689045814335791636
+    second: eyes7_1
+  - first:
+      213: -289053879263986922
+    second: eyes7_2
+  - first:
+      213: -7574505573764457452
+    second: eyes7_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,23 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mouth1_0
+      name: eyes7_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 556
-        height: 804
+        x: 220
+        y: 506
+        width: 58
+        height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1243536e016fcb590800000000000000
-      internalID: -7656974713994529759
+      spriteID: 25b518f3c0cb883c0800000000000000
+      internalID: -4357025878689883310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyes7_1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 511
+        width: 57
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced9bfceca92deeb0800000000000000
+      internalID: -4689045814335791636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyes7_2
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 484
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b758d37031dfbf0800000000000000
+      internalID: -289053879263986922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyes7_3
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 489
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c9d86ef43f1e690800000000000000
+      internalID: -7574505573764457452
       vertices: []
       indices: 
       edges: []
@@ -138,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ea6fe888565c5944d966b00fbb4d568b
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      mouth1_0: -7656974713994529759
+      eyes7_0: -4357025878689883310
+      eyes7_1: -4689045814335791636
+      eyes7_2: -289053879263986922
+      eyes7_3: -7574505573764457452
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
