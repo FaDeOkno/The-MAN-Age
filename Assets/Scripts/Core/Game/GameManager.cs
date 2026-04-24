@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public const int Year = 984;
     public static GameManager Instance { get; private set; }
 
     public int Seed = 0;

@@ -4,11 +4,8 @@ public class VisitorPhoto : MonoBehaviour
 {
     [SerializeField] private GameObject LayerPrefab;
 
-    private int _currentSeed;
     private GameObject _currentPhoto;
-
-    private int _queuedSeed;
-    private Species _queuedSpecies;
+    private Visitor _queuedVisitor;
 
     public void Generate(Component sender, object data)
     {
@@ -20,25 +17,18 @@ public class VisitorPhoto : MonoBehaviour
 
         Debug.Log($"Generating photo for visitor with seed {visitor.Seed} and species {visitor.Species}");
 
-        _queuedSeed = visitor.Seed;
-        _queuedSpecies = visitor.Species;
-
-        if (HandVisualsManager.Instance.CurrentAnimation != HandAnimation.ShowingId)
-            QueueMove();
-    }
-
-    public void QueueMove()
-    {
-        if (_queuedSeed == _currentSeed)
-            return;
+        _queuedVisitor = visitor;
 
         if (_currentPhoto != null)
             Destroy(_currentPhoto);
 
         var sprite = GetComponent<SpriteRenderer>();
 
-        _currentSeed = _queuedSeed;
-        _currentPhoto = Visitor.BuildPseudoVisitor(_queuedSeed, sprite.sortingOrder, sprite.sortingLayerID, _queuedSpecies, LayerPrefab);
+        _currentPhoto = visitor.BuildPseudoVisitor(sprite.sortingOrder, sprite.sortingLayerID, LayerPrefab);
         _currentPhoto.transform.SetParent(transform, false);
+    }
+
+    public void QueueMove()
+    {
     }
 }

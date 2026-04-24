@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
@@ -11,7 +12,9 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
     public GameEvent VisitorEnteredEvent;
 
     public Species Species;
-    public int Age;
+    public DateTime BirthDate;
+    public int Age => (int)((new DateTime(GameManager.Year, DateTime.Now.Month, DateTime.Now.Day) - BirthDate).TotalDays / 365.25);
+
     public int Seed;
 
     public float DragToApprove = 1.5f;
@@ -19,14 +22,14 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
     public bool IsValid { get; private set; }
     public bool InteractionAllowed { get; private set; } = false;
 
-    private List<SpriteRenderer> _faceLayers = new();
+    public List<SpriteRenderer> FaceLayers = new();
     private bool _isDragging = false;
     private float _draggedDistance = 0f;
 
     public void OnPointerDown(PointerEventData eventData)
     {
         _isDragging = true;
-        Debug.Log($"Clicked on visitor with age {Age}");
+        Debug.Log($"Birth date: {BirthDate}");
     }
 
     public void OnPointerUp(PointerEventData eventData)
@@ -63,21 +66,26 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
         Seed = seed;
         Species = species;
 
-        foreach (var item in _faceLayers.Union(GetComponentsInChildren<SpriteRenderer>().Except(new[] { GetComponent<SpriteRenderer>() })))
+        var date = new DateTime(GameManager.Year, DateTime.Now.Month, DateTime.Now.Day);
+
+        foreach (var item in FaceLayers.Union(GetComponentsInChildren<SpriteRenderer>().Except(new[] { GetComponent<SpriteRenderer>() })))
         {
             Destroy(item.gameObject);
         }
 
-        _faceLayers.Clear();
+        FaceLayers.Clear();
 
         if (random.Prob(.2f))
         {
-            Age = random.Next(species.CommonAgeCap, species.RareAgeCap + 1);
+            date = new DateTime(date.Year - random.Next(species.CommonAgeCap, species.RareAgeCap + 1), date.Month, date.Day);
         }
         else
         {
-            Age = random.Next(species.MinAge, species.CommonAgeCap + 1);
+            date = new DateTime(date.Year - random.Next(species.MinAge, species.CommonAgeCap + 1), date.Month, date.Day);
         }
+
+        date.AddDays(random.Next(365));
+        BirthDate = date;
 
         IsValid = Age >= species.MatureAge;
 
@@ -89,7 +97,7 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
 
             renderer.sprite = sprite;
             renderer.sortingOrder = GetComponent<SpriteRenderer>().sortingOrder + i + 1;
-            _faceLayers.Add(renderer);
+            FaceLayers.Add(renderer);
         }
     }
 
@@ -108,26 +116,25 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
 
     public void FadeColor(float duration = 1.5f)
     {
-        foreach (var layer in _faceLayers)
+        foreach (var layer in FaceLayers)
         {
             layer.DOColor(Color.black, duration).SetEase(Ease.InQuad);
         }
         GetComponent<SpriteRenderer>().DOColor(Color.black, duration).SetEase(Ease.InQuad);
     }
 
-    public static GameObject BuildPseudoVisitor(int seed, int renderDepth, int sortingLayer, Species species, GameObject layerPrefab)
+    public GameObject BuildPseudoVisitor(int renderDepth, int sortingLayer, GameObject layerPrefab)
     {
-        var random = new System.Random(seed);
         var visitorObj = new GameObject("PseudoVisitor");
         SceneManager.MoveGameObjectToScene(visitorObj, SceneManager.GetActiveScene());
 
-        for (var i = 0; i < species.FaceLayers.Count; i++)
+        for (var i = 0; i < FaceLayers.Count; i++)
         {
-            var sprite = random.Pick(species.FaceLayers[i].Sprites);
+            var sprite = FaceLayers[i];
             var layer = Instantiate(layerPrefab, visitorObj.transform);
             var renderer = layer.GetComponent<SpriteRenderer>();
 
-            renderer.sprite = sprite;
+            renderer.sprite = sprite.sprite;
             renderer.sortingOrder = renderDepth + i + 1;
             renderer.sortingLayerID = sortingLayer;
         }
