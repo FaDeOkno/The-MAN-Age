@@ -194,6 +194,9 @@ GameObject:
   - component: {fileID: 6140928938014850233}
   - component: {fileID: 5765991655631946441}
   - component: {fileID: 6727186187641723703}
+  - component: {fileID: 1952427455217540456}
+  - component: {fileID: -7913887182647423270}
+  - component: {fileID: -7336700869632900422}
   m_Layer: 0
   m_Name: Visitor
   m_TagString: Untagged
@@ -295,7 +298,7 @@ MonoBehaviour:
   LayerPrefab: {fileID: 2298985726463690836, guid: 863614f6a9bf88940b3245c341cd0b34, type: 3}
   VisitorEnteredEvent: {fileID: 11400000, guid: 4f8c6642e3cca074db24d517a8dd8e0b, type: 2}
   Species: {fileID: 0}
-  Age: 0
+  Seed: 0
   DragToApprove: 15
 --- !u!61 &6727186187641723703
 BoxCollider2D:
@@ -343,6 +346,78 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 7.9142857, y: 11.485714}
   m_EdgeRadius: 0
+--- !u!114 &1952427455217540456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244033535008402025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fea4156cb4650b4fbb7377831958cc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueCaller
+  _dialogue:
+  - {fileID: 11400000, guid: 7076ebe821b88d64db8dfa51ee201b69, type: 2}
+  _startDialogueEvent: {fileID: 11400000, guid: d95aa587998fb1c4c9e0002bf6e8dcd7, type: 2}
+  _endDialogueEvent: {fileID: 11400000, guid: 59c0511c859507043a36584e779a5cad, type: 2}
+--- !u!114 &-7913887182647423270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244033535008402025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c359ca24d44738d4780e772c6a778720, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  _gameEvent: {fileID: 11400000, guid: 4f8c6642e3cca074db24d517a8dd8e0b, type: 2}
+  _onEventRaised:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1952427455217540456}
+        m_TargetAssemblyTypeName: DialogueCaller, Assembly-CSharp
+        m_MethodName: OnStartEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-7336700869632900422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244033535008402025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c359ca24d44738d4780e772c6a778720, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  _gameEvent: {fileID: 11400000, guid: 27f781b9a65cc234f8868250d0821328, type: 2}
+  _onEventRaised:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1952427455217540456}
+        m_TargetAssemblyTypeName: DialogueCaller, Assembly-CSharp
+        m_MethodName: OnEndEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7982360320382281714
 GameObject:
   m_ObjectHideFlags: 0
