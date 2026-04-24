@@ -1,4 +1,5 @@
 using System.Text;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 
@@ -77,16 +78,34 @@ public class DialogueBox : MonoBehaviour
             return;
         }
 
-        _canvasGroup.alpha = 1f;
-        //_canvasGroup.interactable = true;
-        _currentDialogueData = dialogueData;
-        _currentDialogueIndex = 0;
-        _startTime = Time.time;
-        _isTyping = true;
+        if (_canvasGroup.alpha >= 0)
+        {
+            _canvasGroup.alpha = 1f;
+            _currentDialogueData = dialogueData;
+            _currentDialogueIndex = 0;
+            _startTime = Time.time;
+            _isTyping = true;
+            return;
+        }
+
+        _canvasGroup.DOFade(1f, .75f).SetEase(Ease.OutSine).OnComplete(() =>
+        {
+            _canvasGroup.alpha = 1f;
+            _currentDialogueData = dialogueData;
+            _currentDialogueIndex = 0;
+            _startTime = Time.time;
+            _isTyping = true;
+        });
+
     }
 
     public void OnNextDialogueEvent()
     {
+        if (_currentDialogueData == null)
+        {
+            EndDialogue();
+            return;
+        }
         if (_currentDialogueIndex < _currentDialogueData.Length - 1)
         {
             Debug.Log("Next dialogue");
@@ -102,10 +121,12 @@ public class DialogueBox : MonoBehaviour
 
     public void EndDialogue()
     {
-        _isTyping = false;
-        _currentDialogueData = null;
-        _dialogueTextUI.text = string.Empty;
-        _canvasGroup.alpha = 0f;
-        //_canvasGroup.interactable = false;
+        _canvasGroup.DOFade(0f, .75f).SetEase(Ease.OutSine).OnComplete(() =>
+        {
+            _isTyping = false;
+            _currentDialogueData = null;
+            _dialogueTextUI.text = string.Empty;
+            _canvasGroup.alpha = 0f;
+        });
     }
 }
