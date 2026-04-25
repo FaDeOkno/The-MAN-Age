@@ -26,6 +26,8 @@ public class VisitorPhoto : MonoBehaviour
 
         _currentPhoto = visitor.BuildPseudoVisitor(sprite.sortingOrder, sprite.sortingLayerID, LayerPrefab);
         _currentPhoto.transform.SetParent(transform, false);
+
+        _currentPhoto.transform.localPosition = (Vector3)visitor.Species.BodyOffset * 2;
     }
 
     public void QueueMove()

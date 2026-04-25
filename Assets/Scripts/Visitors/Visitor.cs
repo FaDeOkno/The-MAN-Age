@@ -93,6 +93,7 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
         {
             var sprite = random.Pick(species.FaceLayers[i].Sprites);
             var layer = Instantiate(LayerPrefab, transform);
+            layer.transform.localPosition = (Vector3)species.BodyOffset;
             var renderer = layer.GetComponent<SpriteRenderer>();
 
             renderer.sprite = sprite;
@@ -104,7 +105,7 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
     public void PlaySpawnAnimation(Vector2 startPos, Vector2 endPos, TweenCallback onComplete = null)
     {
         transform.position = startPos;
-        transform.DOMove(endPos, 1.2f).SetEase(Ease.OutBack)
+        transform.DOMove(endPos, 1.2f).SetEase(Ease.OutExpo)
             .OnComplete(() =>
             {
                 InteractionAllowed = true;
