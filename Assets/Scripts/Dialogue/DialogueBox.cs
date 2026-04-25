@@ -72,11 +72,13 @@ public class DialogueBox : MonoBehaviour
             return;
         }
 
-        if (data is not DialogueData[] dialogueData)
+        if (data is not DialogueList list)
         {
-            Debug.LogWarning("Received data is not of type DialogueData.");
+            Debug.LogWarning("Received data is not of type DialogueList.");
             return;
         }
+
+        var dialogueData = list.Dialogue;
 
         if (_canvasGroup.alpha >= 0)
         {
