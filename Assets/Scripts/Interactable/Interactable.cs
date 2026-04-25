@@ -8,6 +8,8 @@ public class Interactable : MonoBehaviour, IPointerEnterHandler, IPointerDownHan
 
     [SerializeField] private float _cooldown = 0.5f;
     [SerializeField] private GameEvent _onInteractEvent;
+    [SerializeField] private bool _isPicking = false;
+    [SerializeField] private string _state = "ButtonPress";
 
     private float _cooldownTimer = 0f;
     public bool IsHovered = false;
@@ -35,7 +37,11 @@ public class Interactable : MonoBehaviour, IPointerEnterHandler, IPointerDownHan
 
         _cooldownTimer = _cooldown;
 
-        _animator.Play("ButtonPress");
+        if (_isPicking)
+            _animator.SetBool(_state, true);
+        else
+            _animator.Play(_state);
+
         _onInteractEvent.Raise(this, null);
     }
 
@@ -48,5 +54,13 @@ public class Interactable : MonoBehaviour, IPointerEnterHandler, IPointerDownHan
         }
 
         _animator.SetBool("IsHovered", IsHovered);
+    }
+
+    public void Return()
+    {
+        if (!_isPicking)
+            return;
+
+        _animator.SetBool(_state, false);
     }
 }
