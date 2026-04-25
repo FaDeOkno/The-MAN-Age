@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Species
   MatureAge: 150
   MinAge: 100
-  CommonAgeCap: 550
+  CommonAgeCap: 350
   RareAgeCap: 750
   SpeciesName: Elf
   FaceLayers:

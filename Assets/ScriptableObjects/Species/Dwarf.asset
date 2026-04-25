@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Species
   MatureAge: 18
   MinAge: 10
-  CommonAgeCap: 200
+  CommonAgeCap: 40
   RareAgeCap: 800
   SpeciesName: Zombie
   FaceLayers:
