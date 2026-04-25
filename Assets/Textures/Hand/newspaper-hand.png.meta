@@ -1,0 +1,488 @@
+fileFormatVersion: 2
+guid: aa318cee5bb753541a7da2d1133a0b42
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1332869346402155553
+    second: newspaper-hand_0
+  - first:
+      213: -5903607041385896025
+    second: newspaper-hand_1
+  - first:
+      213: 4359815017429879659
+    second: newspaper-hand_2
+  - first:
+      213: -5402518939208924281
+    second: newspaper-hand_3
+  - first:
+      213: -9058421075909708680
+    second: newspaper-hand_4
+  - first:
+      213: 2185839667661733851
+    second: newspaper-hand_5
+  - first:
+      213: 1385900599883234335
+    second: newspaper-hand_6
+  - first:
+      213: -5184973387693974715
+    second: newspaper-hand_7
+  - first:
+      213: -2640511440978730085
+    second: newspaper-hand_8
+  - first:
+      213: -2111659902276473706
+    second: newspaper-hand_9
+  - first:
+      213: -7194075075007854770
+    second: newspaper-hand_10
+  - first:
+      213: -3060042814653763334
+    second: newspaper-hand_11
+  - first:
+      213: 4150208289977749218
+    second: newspaper-hand_12
+  - first:
+      213: 8000184802250133264
+    second: newspaper-hand_13
+  - first:
+      213: -3846345131751491813
+    second: newspaper-hand_14
+  - first:
+      213: -8592759244066537162
+    second: newspaper-hand_15
+  - first:
+      213: 761087220936488178
+    second: newspaper-hand_16
+  - first:
+      213: 4149256500856475059
+    second: newspaper-hand_17
+  - first:
+      213: -6695146120886082193
+    second: newspaper-hand_18
+  - first:
+      213: -3883412177440778716
+    second: newspaper-hand_19
+  - first:
+      213: -2426119371804304164
+    second: newspaper-hand_20
+  - first:
+      213: -7036087816002418249
+    second: newspaper-hand_21
+  - first:
+      213: -103957396624454875
+    second: newspaper-hand_22
+  - first:
+      213: -3955543021348238204
+    second: newspaper-hand_23
+  - first:
+      213: -4413113654857146503
+    second: newspaper-hand_24
+  - first:
+      213: 1804483829801838183
+    second: newspaper-hand_25
+  - first:
+      213: 6765888203072408405
+    second: newspaper-hand_26
+  - first:
+      213: 3721918656409287753
+    second: newspaper-hand_27
+  - first:
+      213: 4785700662212141131
+    second: newspaper-hand_28
+  - first:
+      213: -1428047225522330891
+    second: newspaper-hand_29
+  - first:
+      213: 571222003021419964
+    second: newspaper-hand_30
+  - first:
+      213: 2505497620484008150
+    second: newspaper-hand_31
+  - first:
+      213: 3764966300182553545
+    second: newspaper-hand_32
+  - first:
+      213: 1454752669212252917
+    second: newspaper-hand_33
+  - first:
+      213: -7880678762009381075
+    second: newspaper-hand_34
+  - first:
+      213: -550019347931003789
+    second: newspaper-hand_35
+  - first:
+      213: -4196940961972895934
+    second: newspaper-hand_36
+  - first:
+      213: 5198531187579914744
+    second: newspaper-hand_37
+  - first:
+      213: -2398562849328178690
+    second: newspaper-hand_38
+  - first:
+      213: -6044488476690115958
+    second: newspaper-hand_39
+  - first:
+      213: -4403708254635218642
+    second: newspaper-hand_40
+  - first:
+      213: 1447511775609675426
+    second: newspaper-hand_41
+  - first:
+      213: -4017428839881080832
+    second: newspaper-hand_42
+  - first:
+      213: 3430311576406301429
+    second: newspaper-hand_43
+  - first:
+      213: -1545833558420415762
+    second: newspaper-hand_44
+  - first:
+      213: 37750939133378674
+    second: newspaper-hand_45
+  - first:
+      213: -6634879503316815283
+    second: newspaper-hand_46
+  - first:
+      213: 7471893433326258458
+    second: newspaper-hand_47
+  - first:
+      213: -2819580514795317292
+    second: newspaper-hand_48
+  - first:
+      213: -7359235745035157240
+    second: newspaper-hand_49
+  - first:
+      213: 25829178670417038
+    second: newspaper-hand_50
+  - first:
+      213: -6964952403967619741
+    second: newspaper-hand_51
+  - first:
+      213: -4968938201562692294
+    second: newspaper-hand_52
+  - first:
+      213: 2627785823784203079
+    second: newspaper-hand_53
+  - first:
+      213: 4396670250552736177
+    second: newspaper-hand_54
+  - first:
+      213: -1166517703548098781
+    second: newspaper-hand_55
+  - first:
+      213: 4099334250983910850
+    second: newspaper-hand_56
+  - first:
+      213: -1125729268498048275
+    second: newspaper-hand_57
+  - first:
+      213: -9160176742739437901
+    second: newspaper-hand_58
+  - first:
+      213: -2479782220358482730
+    second: newspaper-hand_59
+  - first:
+      213: 6273888878822498962
+    second: newspaper-hand_60
+  - first:
+      213: 3288388877302265931
+    second: newspaper-hand_61
+  - first:
+      213: 1844528122301777098
+    second: newspaper-hand_62
+  - first:
+      213: 2977529239606367650
+    second: newspaper-hand_63
+  - first:
+      213: -8842626579688287060
+    second: newspaper-hand_64
+  - first:
+      213: 8592862815642688477
+    second: newspaper-hand_65
+  - first:
+      213: 5478064850443896067
+    second: newspaper-hand_66
+  - first:
+      213: 4092982247484980168
+    second: newspaper-hand_67
+  - first:
+      213: -977096264339346340
+    second: newspaper-hand_68
+  - first:
+      213: 7351483718521331384
+    second: newspaper-hand_69
+  - first:
+      213: 3234811426584710262
+    second: newspaper-hand_70
+  - first:
+      213: -8867912380005807087
+    second: newspaper-hand_71
+  - first:
+      213: -6957349895258817823
+    second: newspaper-hand_72
+  - first:
+      213: 3389023867106845301
+    second: newspaper-hand_73
+  - first:
+      213: 2095499426195763857
+    second: newspaper-hand_74
+  - first:
+      213: -1464488512409681304
+    second: newspaper-hand_75
+  - first:
+      213: 7915582425674741813
+    second: newspaper-hand_76
+  - first:
+      213: -3823136374230757478
+    second: newspaper-hand_77
+  - first:
+      213: -4055828408978579549
+    second: newspaper-hand_78
+  - first:
+      213: 5483866221923502257
+    second: newspaper-hand_79
+  - first:
+      213: -4108228847202224833
+    second: newspaper-hand_80
+  - first:
+      213: 7975479805004033088
+    second: newspaper-hand_81
+  - first:
+      213: -6027635268115899537
+    second: newspaper-hand_82
+  - first:
+      213: -1266327352366685313
+    second: newspaper-hand_83
+  - first:
+      213: 7555040664867999214
+    second: newspaper-hand_84
+  - first:
+      213: -7321312098179530894
+    second: newspaper-hand_85
+  - first:
+      213: -2452591564968139977
+    second: newspaper-hand_86
+  - first:
+      213: -8224989296227877515
+    second: newspaper-hand_87
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 170
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: newspaper-hand_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2589
+        height: 1797
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd341bb2462b08de0800000000000000
+      internalID: -1332869346402155553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newspaper-hand_1
+      rect:
+        serializedVersion: 2
+        x: 2589
+        y: 0
+        width: 2589
+        height: 1797
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a7e2bcacac221ea0800000000000000
+      internalID: -5903607041385896025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newspaper-hand_2
+      rect:
+        serializedVersion: 2
+        x: 5178
+        y: 0
+        width: 2589
+        height: 1797
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b4258b8ac218c30800000000000000
+      internalID: 4359815017429879659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newspaper-hand_3
+      rect:
+        serializedVersion: 2
+        x: 7767
+        y: 0
+        width: 2589
+        height: 1797
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783c12806a56605b0800000000000000
+      internalID: -5402518939208924281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 10f7fc96e75434b4cb0837543af6c0db
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":2589.0,"y":1797.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      newspaper-hand_0: -1332869346402155553
+      newspaper-hand_1: -5903607041385896025
+      newspaper-hand_2: 4359815017429879659
+      newspaper-hand_3: -5402518939208924281
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
