@@ -13,6 +13,8 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
 
     public Species Species;
     public DateTime BirthDate;
+    public string Name;
+
     public bool AlwaysValid = false;
     public bool HasId = true;
 
@@ -73,6 +75,7 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
 
         var date = new DateTime(GameManager.Year, DateTime.Now.Month, DateTime.Now.Day);
 
+        // Clear old layers
         foreach (var item in FaceLayers.Union(GetComponentsInChildren<SpriteRenderer>().Except(new[] { GetComponent<SpriteRenderer>() })))
         {
             Destroy(item.gameObject);
@@ -80,6 +83,7 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
 
         FaceLayers.Clear();
 
+        // Choose random dialogue
         if (new System.Random(seed + random.Next()).Prob(.2f))
         {
             HasId = false;
@@ -90,6 +94,7 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
             GetComponent<DialogueCaller>().Dialogue = random.Pick(HasIdDialogues);
         }
 
+        // Generate and set the age
         if (random.Prob(.2f))
         {
             date = new DateTime(date.Year - random.Next(species.CommonAgeCap, species.RareAgeCap + 1), date.Month, date.Day);
@@ -104,6 +109,10 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
 
         IsValid = Age >= species.MatureAge && HasId;
 
+        // Generate name
+        Name = $"{random.Pick(Species.FirstNames)} {random.Pick(Species.LastNames)}";
+
+        // Build the character
         for (var i = 0; i < species.FaceLayers.Count; i++)
         {
             var sprite = random.Pick(species.FaceLayers[i].Sprites);
