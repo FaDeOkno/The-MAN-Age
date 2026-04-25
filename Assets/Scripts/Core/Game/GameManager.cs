@@ -90,6 +90,7 @@ public class GameManager : MonoBehaviour
             _isFading = false;
             var dialogueCaller = visitor.GetComponent<DialogueCaller>();
             dialogueCaller.Dialogue = _curDay.InitialDialogue;
+            dialogueCaller.OnStartEvent();
         });
     }
 
@@ -114,7 +115,7 @@ public class GameManager : MonoBehaviour
         _currentVisitor.transform.DOMoveX(_currentVisitor.transform.position.x - 16, 2f).SetEase(Ease.InQuad)
             .OnComplete(() =>
             {
-                if (!_currentVisitor.IsValid)
+                if (!_currentVisitor.IsValid && !_currentVisitor.AlwaysValid)
                     DoMistake();
 
                 Destroy(_currentVisitor.gameObject);
@@ -134,7 +135,7 @@ public class GameManager : MonoBehaviour
         _currentVisitor.transform.DOMoveX(_currentVisitor.transform.position.x + 16, 2f).SetEase(Ease.InQuad)
             .OnComplete(() =>
             {
-                if (_currentVisitor.IsValid)
+                if (_currentVisitor.IsValid && !_currentVisitor.AlwaysValid)
                     DoMistake();
 
                 Destroy(_currentVisitor.gameObject);
