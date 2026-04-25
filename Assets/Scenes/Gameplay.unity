@@ -3814,11 +3814,15 @@ MonoBehaviour:
   VisitorPrefab: {fileID: 7244033535008402025, guid: 161ba46a8f3fc9f4ba46a3611170c70c, type: 3}
   VisitorCheckedEvent: {fileID: 11400000, guid: 27f781b9a65cc234f8868250d0821328, type: 2}
   MistakeEvent: {fileID: 11400000, guid: e871a6ae280228e46a1bdacc84b1c7bd, type: 2}
+  UpdateNewspaperEvent: {fileID: 0}
   _gameplayTransform: {fileID: 96316156}
-  _species:
-  - {fileID: 11400000, guid: b92c1846bc8055e4ab1e4649c2bc6f4b, type: 2}
-  - {fileID: 11400000, guid: eb7b67a15acba5e4fb27c2d089e79241, type: 2}
-  - {fileID: 11400000, guid: a7beb227d083a0d4fbbb09d61eac906c, type: 2}
+  _days:
+  - Species: []
+    News: 
+    NewsFacePrefab: {fileID: 0}
+    VisitorCount: 0
+    InitialDialogue: {fileID: 0}
+  _introVisitorPrefab: {fileID: 0}
   _spawnOffset: {x: 0, y: -8}
   _characterOffset: {x: 0, y: -1}
 --- !u!4 &1685368251

@@ -13,6 +13,9 @@ public class PlayAnimationOnEvent : MonoBehaviour
 
     public void Play(Component sender, object param)
     {
+        if (param is bool value && !value)
+            return;
+
         _animator.Play(_animationId);
     }
 }

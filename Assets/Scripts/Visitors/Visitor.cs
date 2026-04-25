@@ -13,6 +13,11 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
 
     public Species Species;
     public DateTime BirthDate;
+    public bool AlwaysValid = false;
+    public bool HasId = true;
+
+    public DialogueList[] HasIdDialogues;
+    public DialogueList[] NoIdDialogues;
     public int Age => (int)((new DateTime(GameManager.Year, DateTime.Now.Month, DateTime.Now.Day) - BirthDate).TotalDays / 365.25);
 
     public int Seed;
@@ -75,6 +80,16 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
 
         FaceLayers.Clear();
 
+        if (new System.Random(seed + random.Next()).Prob(.2f))
+        {
+            HasId = false;
+            GetComponent<DialogueCaller>().Dialogue = random.Pick(NoIdDialogues);
+        }
+        else
+        {
+            GetComponent<DialogueCaller>().Dialogue = random.Pick(HasIdDialogues);
+        }
+
         if (random.Prob(.2f))
         {
             date = new DateTime(date.Year - random.Next(species.CommonAgeCap, species.RareAgeCap + 1), date.Month, date.Day);
@@ -87,7 +102,7 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
         date.AddDays(random.Next(365));
         BirthDate = date;
 
-        IsValid = Age >= species.MatureAge;
+        IsValid = Age >= species.MatureAge && HasId;
 
         for (var i = 0; i < species.FaceLayers.Count; i++)
         {
@@ -110,7 +125,7 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
             {
                 InteractionAllowed = true;
                 onComplete?.Invoke();
-                VisitorEnteredEvent.Raise(this, this);
+                VisitorEnteredEvent.Raise(this, HasId);
                 Debug.Log($"Visitor entered with age {Age} and seed {Seed}");
             });
     }

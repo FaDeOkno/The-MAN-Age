@@ -9,7 +9,7 @@ public class VisitorPhoto : MonoBehaviour
 
     public void Generate(Component sender, object data)
     {
-        if (data is not Visitor visitor)
+        if (sender is not Visitor visitor)
         {
             Debug.LogError("Expected Visitor data for VisitorPhoto generation");
             return;
