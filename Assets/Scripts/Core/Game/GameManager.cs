@@ -1,3 +1,4 @@
+using System.Linq;
 using DG.Tweening;
 using UnityEngine;
 
@@ -7,23 +8,35 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     public int Seed = 0;
+
+    [SerializeField, Header("General settings")] private DayData[] _days;
     [SerializeField] private int _visitorsCap = 15;
     [SerializeField] private int _mistakeCap = 3;
-    [SerializeField] private GameObject VisitorPrefab;
-    [SerializeField] private GameEvent VisitorCheckedEvent;
-    [SerializeField] private GameEvent MistakeEvent;
-
-    [SerializeField] private Transform _gameplayTransform;
-    [SerializeField] private Species[] _species;
-
     [SerializeField] private Vector2 _spawnOffset = Vector2.down * 8;
     [SerializeField] private Vector2 _characterOffset = Vector2.down;
+
+    [SerializeField, Header("Events")] private GameEvent VisitorCheckedEvent;
+    [SerializeField] private GameEvent MistakeEvent;
+    [SerializeField] private GameEvent UpdateNewspaperEvent;
+    [SerializeField] private GameEvent NextDayStartingEvent;
+    [SerializeField] private GameEvent FailureEvent;
+
+    [SerializeField, Header("Prefabs")] private GameObject VisitorPrefab;
+    [SerializeField] private GameObject _introVisitorPrefab;
+    [SerializeField] private Transform _gameplayTransform;
+
+    [SerializeField, Header("SFX")] private AudioSource _successJingle;
+    [SerializeField] private AudioSource _failureJingle;
+    [SerializeField] private AudioSource _mistakeJingle;
 
     private Visitor _currentVisitor;
     private int _curVisitorIndex = 0;
     private bool _isFading = true;
-    private int _curDay = 0;
+
+    private int _curDayIndex = 0;
     private int _mistakes = 0;
+    private DayData _curDay => _curDayIndex >= _days.Count() ? _days.Last() : _days[_curDayIndex];
+
     private System.Random _random;
     private int _seed;
 
@@ -38,16 +51,25 @@ public class GameManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        NextVisitorOrEndDay();
+        Invoke("NextVisitorOrEndDay", 2f);
     }
 
     public void NextVisitorOrEndDay()
     {
         _curVisitorIndex++;
-        _seed = Seed + _curVisitorIndex + (_curDay * _visitorsCap);
+        _seed = Seed + _curVisitorIndex + (_curDayIndex * _curDay.VisitorCount);
         _random = new System.Random(_seed);
 
-        if (_curVisitorIndex <= _visitorsCap)
+        if (_curVisitorIndex <= 1)
+        {
+            UpdateNewspaperEvent.Raise(this, _curDay);
+            SpawnIntroVisitor();
+        }
+        else if (_mistakeCap <= _mistakes)
+        {
+            EndDay();
+        }
+        else if (_curVisitorIndex <= _curDay.VisitorCount)
         {
             SpawnVisitor();
         }
@@ -57,12 +79,26 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void SpawnIntroVisitor()
+    {
+        var visitor = Instantiate(_introVisitorPrefab, _gameplayTransform).GetComponent<Visitor>();
+
+        _currentVisitor = visitor;
+
+        visitor.PlaySpawnAnimation(_spawnOffset, _characterOffset, () =>
+        {
+            _isFading = false;
+            var dialogueCaller = visitor.GetComponent<DialogueCaller>();
+            dialogueCaller.Dialogue = _curDay.InitialDialogue;
+        });
+    }
+
     private void SpawnVisitor()
     {
         var visitor = Instantiate(VisitorPrefab, _gameplayTransform).GetComponent<Visitor>();
         _currentVisitor = visitor;
 
-        visitor.Generate(_seed, _random.Pick(_species));
+        visitor.Generate(_seed, _random.Pick(_curDay.Species));
         visitor.PlaySpawnAnimation(_spawnOffset, _characterOffset, () => _isFading = false);
     }
 
@@ -108,20 +144,34 @@ public class GameManager : MonoBehaviour
 
     public void StartDay()
     {
-        Debug.Log("Day started!");
         _curVisitorIndex = 0;
-        NextVisitorOrEndDay();
+        _mistakes = 0;
+        MistakeEvent.Raise(this, 0);
+        NextDayStartingEvent.Raise(this, null);
+
+        Invoke("NextVisitorOrEndDay", 2f);
     }
 
-    public void EndDay()
+    public void EndDay(bool success = true)
     {
-        Debug.Log("Day ended!");
-        // Implement end of day logic here (e.g., show summary, reset for next day, etc.)
+        if (success)
+        {
+            _successJingle?.Play();
+            _curDayIndex++;
+
+            NextDayStartingEvent.Raise(this, _curDayIndex);
+        }
+        else
+        {
+            _failureJingle?.Play();
+            FailureEvent.Raise(this, null);
+        }
     }
 
     private void DoMistake()
     {
         _mistakes++;
+        _mistakeJingle?.Play();
         MistakeEvent.Raise(this, _mistakes);
     }
 }

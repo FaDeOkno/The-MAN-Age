@@ -2,22 +2,24 @@ using UnityEngine;
 
 public class DialogueCaller : MonoBehaviour
 {
-    [SerializeField] private DialogueList[] _dialogue;
+    public DialogueList Dialogue;
     [SerializeField] private GameEvent _startDialogueEvent;
     [SerializeField] private GameEvent _endDialogueEvent;
+    [SerializeField] private DialogueList[] _dialogues;
+    [SerializeField] private bool _randomDialogue = true;
+
+    void Start()
+    {
+        if (!_randomDialogue)
+            return;
+
+        var random = new System.Random();
+        Dialogue = random.Pick(_dialogues);
+    }
 
     public void OnStartEvent()
     {
-        if (_dialogue.Length == 0)
-        {
-            Debug.LogWarning("No dialogue data assigned to DialogueCaller.");
-            return;
-        }
-
-        var random = new System.Random();
-        var dialogue = random.Pick(_dialogue);
-
-        _startDialogueEvent.Raise(this, dialogue.Dialogue);
+        _startDialogueEvent.Raise(this, Dialogue);
     }
 
     public void OnEndEvent()
