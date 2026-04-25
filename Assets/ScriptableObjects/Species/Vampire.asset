@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8613191c23757b0448b96978be7f093f, type: 3}
+  m_Name: Vampire
+  m_EditorClassIdentifier: Assembly-CSharp::Species
+  MatureAge: 150
+  MinAge: 100
+  CommonAgeCap: 550
+  RareAgeCap: 750
+  SpeciesName: Elf
+  FaceLayers:
+  - Sprites:
+    - {fileID: -5460745012048361445, guid: db852daf203df9440ba0fee702fdf2ea, type: 3}
+    - {fileID: 7414926901492091246, guid: cc6afe375a6b2b54a980b764d868b527, type: 3}
+  - Sprites:
+    - {fileID: 21300000, guid: 181e454ae4e882d48a0f4b8689f38433, type: 3}
+    - {fileID: 21300000, guid: 2b475d8855b01ec40abaf717cd1b30cd, type: 3}
+    - {fileID: 21300000, guid: 784076645b5f4994e9df187d2c17716b, type: 3}
+    - {fileID: 21300000, guid: 56188771d35c2b443bf00a213f0f921b, type: 3}
+    - {fileID: 21300000, guid: ecb9c8d96c6005f48a6b10d26a305a91, type: 3}
+    - {fileID: 21300000, guid: 0239f400940324a4cb3e7fb995a577c2, type: 3}
+  - Sprites:
+    - {fileID: 21300000, guid: 9fe432b01add39a44880b01d4696ec23, type: 3}
+    - {fileID: 21300000, guid: 082e34e54ab12d84caacac467015f7b0, type: 3}
+  - Sprites:
+    - {fileID: 21300000, guid: 1d77bed389951a8428633b5d29435974, type: 3}
+    - {fileID: 21300000, guid: b42434b100891114f998321b0bfb551e, type: 3}
+  - Sprites:
+    - {fileID: 21300000, guid: 8d9fb871792599347b562101a617c005, type: 3}
+    - {fileID: 21300000, guid: afa36c439d1bb8641b4598e40c7d5929, type: 3}
+    - {fileID: 21300000, guid: a5b22050c23de044abb8c0dbef1a8f10, type: 3}
+    - {fileID: 21300000, guid: 8b4e686ff8d101240b52ba082dd30eeb, type: 3}
+    - {fileID: 21300000, guid: 5c932ad0796d6fa49af6704f90d7d431, type: 3}
+    - {fileID: 21300000, guid: dc4831ca4afff694ab50587226755a23, type: 3}
+  BodyOffset: {x: 0, y: 0}
