@@ -53,7 +53,9 @@ public class HandVisualsManager : MonoBehaviour
             return;
 
         _setInactiveEvent.Raise(this, CurrentAnimation);
-        _setActiveEvent.Raise(this, animation);
+
+        if (CurrentAnimation is HandAnimation.None or HandAnimation.GettingId)
+            _setActiveEvent.Raise(this, animation);
 
         CurrentAnimation = animation;
         _awaitingAnimationFinish = true;
@@ -71,6 +73,10 @@ public class HandVisualsManager : MonoBehaviour
             Debug.Log("Got ID");
             _hasId = true;
             PlayAnimation(HandAnimation.ShowingId);
+        }
+        else
+        {
+            _setActiveEvent.Raise(this, CurrentAnimation);
         }
     }
 }
