@@ -81,15 +81,15 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1236575898192437106, guid: 52417ed70bc5b044caf55ed86de97205, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 52417ed70bc5b044caf55ed86de97205, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.42, y: 1.05}
+  m_Size: {x: 7.9428573, y: 11.485714}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!1 &4195399710187817786
 GameObject:
@@ -172,7 +172,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -9161014874991333331, guid: 181e454ae4e882d48a0f4b8689f38433, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2b475d8855b01ec40abaf717cd1b30cd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -180,7 +180,7 @@ SpriteRenderer:
   m_Size: {x: 7.9428573, y: 11.485714}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!1 &7244033535008402025
 GameObject:
@@ -301,6 +301,15 @@ MonoBehaviour:
   LayerPrefab: {fileID: 2298985726463690836, guid: 863614f6a9bf88940b3245c341cd0b34, type: 3}
   VisitorEnteredEvent: {fileID: 11400000, guid: 4f8c6642e3cca074db24d517a8dd8e0b, type: 2}
   Species: {fileID: 0}
+  AlwaysValid: 0
+  HasId: 1
+  HasIdDialogues:
+  - {fileID: 11400000, guid: 7076ebe821b88d64db8dfa51ee201b69, type: 2}
+  - {fileID: 11400000, guid: 36015386be847ec479b7626b83881c94, type: 2}
+  - {fileID: 11400000, guid: 53773703740136b47b32974da4653e8e, type: 2}
+  NoIdDialogues:
+  - {fileID: 11400000, guid: 8c955418b4b2c224aadc6ea1e274de9f, type: 2}
+  - {fileID: 11400000, guid: a507691c80539274ab1c08ecefd8053b, type: 2}
   Seed: 0
   DragToApprove: 15
   FaceLayers: []
@@ -362,10 +371,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fea4156cb4650b4fbb7377831958cc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueCaller
-  _dialogue:
-  - {fileID: 11400000, guid: 7076ebe821b88d64db8dfa51ee201b69, type: 2}
+  Dialogue: {fileID: 0}
   _startDialogueEvent: {fileID: 11400000, guid: d95aa587998fb1c4c9e0002bf6e8dcd7, type: 2}
   _endDialogueEvent: {fileID: 11400000, guid: 59c0511c859507043a36584e779a5cad, type: 2}
+  _dialogues: []
+  _randomDialogue: 0
 --- !u!114 &-7913887182647423270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -816,7 +826,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -7656974713994529759, guid: aae666796a844224091fe521a1495cd3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4c04230ddb4f52340aee30c6dd8ad4c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -824,7 +834,7 @@ SpriteRenderer:
   m_Size: {x: 7.9428573, y: 11.485714}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!1001 &3266968080320243465
 PrefabInstance:
