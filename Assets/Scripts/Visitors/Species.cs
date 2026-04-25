@@ -12,6 +12,9 @@ public class Species : ScriptableObject
     public string SpeciesName;
     public List<FaceLayerData> FaceLayers;
     public Vector2 BodyOffset;
+
+    public string[] FirstNames;
+    public string[] LastNames;
 }
 
 [System.Serializable]
