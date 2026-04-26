@@ -23,6 +23,11 @@ public class DynamicMusicController : MonoBehaviour
         if (_isPlaying)
             return;
 
+        if (_outro.isPlaying)
+        {
+            _outro.DOFade(0, .5f);
+        }
+
         _loop.volume = _originalLoopVolume;
 
         _intro.Play();

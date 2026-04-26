@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
         }
         else if (_mistakeCap <= _mistakes)
         {
-            EndDay();
+            EndDay(false);
         }
         else if (_curVisitorIndex <= _curDay.VisitorCount)
         {
@@ -145,10 +145,12 @@ public class GameManager : MonoBehaviour
 
     public void StartDay()
     {
+        if (_currentVisitor != null)
+            return;
+
         _curVisitorIndex = 0;
         _mistakes = 0;
         MistakeEvent.Raise(this, 0);
-        NextDayStartingEvent.Raise(this, null);
 
         Invoke("NextVisitorOrEndDay", 2f);
     }

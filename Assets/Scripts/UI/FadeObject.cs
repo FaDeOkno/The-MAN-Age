@@ -6,6 +6,7 @@ public class FadeObject : MonoBehaviour
 {
     private CanvasGroup _group;
     [SerializeField] private bool _introFade = true;
+    [SerializeField] private float _introFadeDelay = 0f;
     [SerializeField] private GameEvent _fadeInEvent;
     [SerializeField] private GameEvent _fadeOutEvent;
 
@@ -18,7 +19,7 @@ public class FadeObject : MonoBehaviour
             return;
 
         _group.alpha = 1f;
-        _group.DOFade(0f, 2f).SetEase(Ease.InSine);
+        Invoke("FadeOutNoEvent", _introFadeDelay);
     }
 
     public void FadeIn()
@@ -26,7 +27,7 @@ public class FadeObject : MonoBehaviour
         if (_group.alpha >= 1f)
             return;
 
-        _group.DOFade(1f, 2f).SetEase(Ease.InSine).OnComplete(() => _fadeInEvent?.Raise(this, null));
+        _group.DOFade(1f, 2f).SetEase(Ease.InSine).OnComplete(() => { _fadeInEvent?.Raise(this, null); _group.interactable = true; _group.blocksRaycasts = true; });
     }
 
     public void FadeOut()
@@ -34,6 +35,17 @@ public class FadeObject : MonoBehaviour
         if (_group.alpha <= 0f)
             return;
 
-        _group.DOFade(0f, 2f).SetEase(Ease.InSine).OnComplete(() => _fadeOutEvent?.Raise(this, null));
+        _group.interactable = false;
+        _group.blocksRaycasts = false;
+        _group.DOFade(0f, 2f).SetEase(Ease.InSine).OnComplete(() => { _fadeOutEvent?.Raise(this, null); });
+    }
+
+    public void FadeOutNoEvent()
+    {
+        if (_group.alpha <= 0f)
+            return;
+
+        _group.interactable = false;
+        _group.DOFade(0f, 2f).SetEase(Ease.InSine);
     }
 }
