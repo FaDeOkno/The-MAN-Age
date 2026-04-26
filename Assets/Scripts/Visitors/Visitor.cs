@@ -20,7 +20,10 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
 
     public DialogueList[] HasIdDialogues;
     public DialogueList[] NoIdDialogues;
-    public int Age => (int)((new DateTime(GameManager.Year, DateTime.Now.Month, DateTime.Now.Day) - BirthDate).TotalDays / 365.25);
+    public int Age =>
+        (int)((new DateTime(GameManager.Year, DateTime.Now.Month, DateTime.Now.Day)
+                            .AddDays(GameManager.Instance.CurDayIndex) - BirthDate)
+                            .TotalDays / 365.25);
 
     public int Seed;
 

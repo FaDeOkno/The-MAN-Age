@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform _gameplayTransform;
 
     [SerializeField, Header("SFX")] private AudioSource _successJingle;
+    [SerializeField] private AudioSource _correctJingle;
     [SerializeField] private AudioSource _failureJingle;
     [SerializeField] private AudioSource _mistakeJingle;
 
@@ -33,9 +34,9 @@ public class GameManager : MonoBehaviour
     private int _curVisitorIndex = 0;
     private bool _isFading = true;
 
-    private int _curDayIndex = 0;
+    public int CurDayIndex = 0;
     private int _mistakes = 0;
-    private DayData _curDay => _curDayIndex >= _days.Count() ? _days.Last() : _days[_curDayIndex];
+    private DayData _curDay => CurDayIndex >= _days.Count() ? _days.Last() : _days[CurDayIndex];
 
     private System.Random _random;
     private int _seed;
@@ -57,7 +58,7 @@ public class GameManager : MonoBehaviour
     public void NextVisitorOrEndDay()
     {
         _curVisitorIndex++;
-        _seed = Seed + _curVisitorIndex + (_curDayIndex * _curDay.VisitorCount);
+        _seed = Seed + _curVisitorIndex + (CurDayIndex * _curDay.VisitorCount);
         _random = new System.Random(_seed);
 
         if (_curVisitorIndex <= 1)
@@ -121,6 +122,8 @@ public class GameManager : MonoBehaviour
             {
                 if (!_currentVisitor.IsValid && !_currentVisitor.AlwaysValid)
                     DoMistake();
+                else
+                    _correctJingle?.Play();
 
                 Destroy(_currentVisitor.gameObject);
                 NextVisitorOrEndDay();
@@ -141,6 +144,8 @@ public class GameManager : MonoBehaviour
             {
                 if (_currentVisitor.IsValid && !_currentVisitor.AlwaysValid)
                     DoMistake();
+                else
+                    _correctJingle?.Play();
 
                 Destroy(_currentVisitor.gameObject);
                 NextVisitorOrEndDay();
@@ -164,9 +169,9 @@ public class GameManager : MonoBehaviour
         if (success)
         {
             _successJingle?.Play();
-            _curDayIndex++;
+            CurDayIndex++;
 
-            NextDayStartingEvent.Raise(this, _curDayIndex);
+            NextDayStartingEvent.Raise(this, CurDayIndex);
         }
         else
         {

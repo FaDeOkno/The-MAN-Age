@@ -20,8 +20,10 @@ public class CurDateText : MonoBehaviour
         if (_nextUpdate > Time.time)
             return;
 
-        _nextUpdate = Time.time + 5f;
+        _nextUpdate = Time.time + 1f;
         var date = new DateTime(GameManager.Year, DateTime.Now.Month, DateTime.Now.Day);
-        _tmp.SetText(date.ToString("dd.MM.yyyy"));
+        date.AddDays(GameManager.Instance.CurDayIndex);
+
+        _tmp.SetText("Current date: " + date.ToString("dd.MM.yyyy"));
     }
 }
