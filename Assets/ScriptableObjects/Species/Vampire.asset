@@ -29,11 +29,13 @@ MonoBehaviour:
     - {fileID: 21300000, guid: ecb9c8d96c6005f48a6b10d26a305a91, type: 3}
     - {fileID: 21300000, guid: 0239f400940324a4cb3e7fb995a577c2, type: 3}
   - Sprites:
-    - {fileID: 21300000, guid: 9fe432b01add39a44880b01d4696ec23, type: 3}
-    - {fileID: 21300000, guid: 082e34e54ab12d84caacac467015f7b0, type: 3}
+    - {fileID: 21300000, guid: aae666796a844224091fe521a1495cd3, type: 3}
+    - {fileID: 21300000, guid: 89f53493d06c6d349b941c0419914b0a, type: 3}
   - Sprites:
     - {fileID: 21300000, guid: 1d77bed389951a8428633b5d29435974, type: 3}
-    - {fileID: 21300000, guid: b42434b100891114f998321b0bfb551e, type: 3}
+    - {fileID: 21300000, guid: cd0bf3aad0095b7419ca1b2c2e4f10f6, type: 3}
+    - {fileID: 21300000, guid: 059526ecadbf3ee4286c375775aa3b80, type: 3}
+    - {fileID: 21300000, guid: 52417ed70bc5b044caf55ed86de97205, type: 3}
   - Sprites:
     - {fileID: 21300000, guid: 8d9fb871792599347b562101a617c005, type: 3}
     - {fileID: 21300000, guid: afa36c439d1bb8641b4598e40c7d5929, type: 3}
