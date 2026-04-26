@@ -27,10 +27,10 @@ public class DynamicMusicController : MonoBehaviour
 
         if (CurrentLayer.Outro.isPlaying)
         {
-            CurrentLayer.Outro.DOFade(0, .5f).OnComplete(() => StopEverything());
+            CurrentLayer.Outro.DOFade(0, 1.5f);
         }
 
-        SilenceEverything();
+        //SilenceEverything();
         StartSyncLoops();
 
         _isPlaying = true;
