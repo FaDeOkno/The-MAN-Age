@@ -52,6 +52,8 @@ public class GameManager : MonoBehaviour
 
         Instance = this;
         //DontDestroyOnLoad(gameObject);
+
+        Seed = Random.Range(0, 9999);
         Invoke("NextVisitorOrEndDay", 2f);
     }
 
