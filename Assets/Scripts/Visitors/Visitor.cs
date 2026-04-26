@@ -36,12 +36,18 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
     public void OnPointerDown(PointerEventData eventData)
     {
         _isDragging = true;
+
+        #if DEBUG
         Debug.Log($"Birth date: {BirthDate}");
+        #endif
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        #if DEBUG
         Debug.Log($"Dragged distance: {_draggedDistance}");
+        #endif
+
         _isDragging = false;
 
         var distance = _draggedDistance;
@@ -54,7 +60,10 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
         if (distance < DragToApprove)
             return;
 
+        #if DEBUG
         Debug.Log("Approved visitor");
+        #endif
+
         GameManager.Instance.VisitorApprove();
     }
 
@@ -135,7 +144,10 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
                 InteractionAllowed = true;
                 onComplete?.Invoke();
                 VisitorEnteredEvent.Raise(this, HasId);
+
+                #if DEBUG
                 Debug.Log($"Visitor entered with age {Age} and seed {Seed}");
+                #endif
             });
     }
 

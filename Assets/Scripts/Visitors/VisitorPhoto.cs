@@ -15,7 +15,9 @@ public class VisitorPhoto : MonoBehaviour
             return;
         }
 
+        #if DEBUG
         Debug.Log($"Generating photo for visitor with seed {visitor.Seed} and species {visitor.Species}");
+        #endif
 
         _queuedVisitor = visitor;
 

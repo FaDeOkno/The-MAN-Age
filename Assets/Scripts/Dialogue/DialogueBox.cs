@@ -108,7 +108,9 @@ public class DialogueBox : MonoBehaviour
         }
         if (_currentDialogueIndex < _currentDialogueData.Length - 1)
         {
+            #if DEBUG
             Debug.Log("Next dialogue");
+            #endif
             _currentDialogueIndex++;
             _startTime = Time.time;
             _isTyping = true;

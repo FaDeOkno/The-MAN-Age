@@ -70,7 +70,9 @@ public class HandVisualsManager : MonoBehaviour
 
         if (CurrentAnimation == HandAnimation.GettingId)
         {
+            #if DEBUG
             Debug.Log("Got ID");
+            #endif
             _hasId = true;
             PlayAnimation(HandAnimation.ShowingId);
         }
