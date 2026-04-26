@@ -5013,6 +5013,9 @@ MonoBehaviour:
     InitialDialogue: {fileID: 11400000, guid: 3a011d53811938348ad7dc70484b2728, type: 2}
   - Species:
     - {fileID: 11400000, guid: a7beb227d083a0d4fbbb09d61eac906c, type: 2}
+    - {fileID: 11400000, guid: eb7b67a15acba5e4fb27c2d089e79241, type: 2}
+    - {fileID: 11400000, guid: b92c1846bc8055e4ab1e4649c2bc6f4b, type: 2}
+    - {fileID: 11400000, guid: d1a6fa434fde8cf45a86e1fccab02bba, type: 2}
     News: The checkpoint to the only night club in the city is now open again! Make
       sure to bring an ID if you're going there.
     NewsFacePrefab: {fileID: 7244033535008402025, guid: 534f38bc9d611764393443787c18a860, type: 3}

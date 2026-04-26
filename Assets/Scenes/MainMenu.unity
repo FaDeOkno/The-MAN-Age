@@ -525,7 +525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FadeObject
   _introFade: 1
-  _introFadeDelay: 4
+  _introFadeDelay: 2
   _fadeInEvent: {fileID: 0}
   _fadeOutEvent: {fileID: 0}
 --- !u!1 &240676689
@@ -880,14 +880,14 @@ RectTransform:
   m_GameObject: {fileID: 491988835}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1926653829}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -71, y: 11}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 223, y: 11}
   m_SizeDelta: {x: 29, y: 29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &491988837
@@ -985,7 +985,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Artwork - Janlas / @janlasplays
+  m_text: 'Artwork:
+
+    Janlas / @janlasplays'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5c14f464aeec34c409093f95043ec591, type: 2}
   m_sharedMaterial: {fileID: 4656558834399183533, guid: 5c14f464aeec34c409093f95043ec591, type: 2}
@@ -1020,7 +1022,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 4
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -1051,7 +1053,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -72.929, y: 0, z: -129.2015, w: 0}
+  m_margin: {x: -72.929, y: 0, z: -129.2015, w: -32.685257}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1383,8 +1385,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -325, y: -140}
-  m_SizeDelta: {x: 600, y: 110}
+  m_AnchoredPosition: {x: -284.40002, y: -140}
+  m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &670267197
 MonoBehaviour:
@@ -1541,14 +1543,14 @@ RectTransform:
   m_GameObject: {fileID: 685978585}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 670267196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -133.6, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 161.5, y: 0}
   m_SizeDelta: {x: 58, y: 54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &685978587
@@ -2099,14 +2101,14 @@ RectTransform:
   m_GameObject: {fileID: 816456886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1709789836}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 31.6, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 188.4, y: 0}
   m_SizeDelta: {x: 29, y: 53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &816456888
@@ -2416,7 +2418,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The cool jam hosts - HelperWesley, Katty!, Bagel Bits Bakery
+  m_text: "The cool jam hosts: \nHelperWesley, Katty!, Bagel Bits Bakery"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5c14f464aeec34c409093f95043ec591, type: 2}
   m_sharedMaterial: {fileID: 4656558834399183533, guid: 5c14f464aeec34c409093f95043ec591, type: 2}
@@ -2917,7 +2919,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -600, y: 0}
+  m_AnchoredPosition: {x: -559.4, y: 0}
   m_SizeDelta: {x: 1105.9998, y: 481}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1313629110
@@ -3235,8 +3237,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 82
-  m_fontSizeBase: 82
+  m_fontSize: 56
+  m_fontSizeBase: 56
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3322,7 +3324,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -600, y: 0}
+  m_AnchoredPosition: {x: -559.4, y: 0}
   m_SizeDelta: {x: 1077, y: 481}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1509240268
@@ -3735,8 +3737,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: 110}
-  m_SizeDelta: {x: 450, y: 150}
+  m_AnchoredPosition: {x: -284.4, y: 60}
+  m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1709789837
 MonoBehaviour:
@@ -4030,7 +4032,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Music & SFX - Clover/@cloveremilia
+  m_text: 'Music & SFX:
+
+    Clover / @cloveremilia'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5c14f464aeec34c409093f95043ec591, type: 2}
   m_sharedMaterial: {fileID: 4656558834399183533, guid: 5c14f464aeec34c409093f95043ec591, type: 2}
@@ -4167,7 +4171,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Coding - @_kote
+  m_text: 'Coding:
+
+    @_kote'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5c14f464aeec34c409093f95043ec591, type: 2}
   m_sharedMaterial: {fileID: 4656558834399183533, guid: 5c14f464aeec34c409093f95043ec591, type: 2}
@@ -4286,8 +4292,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -325, y: -25}
-  m_SizeDelta: {x: 600, y: 110}
+  m_AnchoredPosition: {x: -284.40002, y: -40}
+  m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1926653830
 MonoBehaviour:
