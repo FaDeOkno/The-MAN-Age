@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14be3b72f7959204c9ba65aa28ce6fa0, type: 3}
-  m_Name: DialogueHasId3
+  m_Name: DialogueNoId3
   m_EditorClassIdentifier: Assembly-CSharp::DialogueList
   Dialogue:
-  - DialogueText: An ID check? Again?
+  - DialogueText: My ID is a private information!
     TypingSpeed: 0.02
     StartColor: {r: 0, g: 0, b: 0, a: 0}
     EndColor: {r: 0.8207547, g: 0.8207547, b: 0.8207547, a: 1}
