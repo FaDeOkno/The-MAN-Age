@@ -2829,7 +2829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1957288766039247899, guid: c00269941100f604c8f1c86d324f1048, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.25
+      value: 8.25
       objectReference: {fileID: 0}
     - target: {fileID: 1957288766039247899, guid: c00269941100f604c8f1c86d324f1048, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3647,7 +3647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1957288766039247899, guid: c00269941100f604c8f1c86d324f1048, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.25
+      value: 8.25
       objectReference: {fileID: 0}
     - target: {fileID: 1957288766039247899, guid: c00269941100f604c8f1c86d324f1048, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5011,6 +5011,13 @@ MonoBehaviour:
     NewsFacePrefab: {fileID: 7244033535008402025, guid: 534f38bc9d611764393443787c18a860, type: 3}
     VisitorCount: 8
     InitialDialogue: {fileID: 11400000, guid: 3a011d53811938348ad7dc70484b2728, type: 2}
+  - Species:
+    - {fileID: 11400000, guid: a7beb227d083a0d4fbbb09d61eac906c, type: 2}
+    News: The checkpoint to the only night club in the city is now open again! Make
+      sure to bring an ID if you're going there.
+    NewsFacePrefab: {fileID: 7244033535008402025, guid: 534f38bc9d611764393443787c18a860, type: 3}
+    VisitorCount: 12
+    InitialDialogue: {fileID: 0}
   _visitorsCap: 15
   _mistakeCap: 3
   _spawnOffset: {x: 0, y: -8}
@@ -7147,7 +7154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1957288766039247899, guid: c00269941100f604c8f1c86d324f1048, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.25
+      value: 8.25
       objectReference: {fileID: 0}
     - target: {fileID: 1957288766039247899, guid: c00269941100f604c8f1c86d324f1048, type: 3}
       propertyPath: m_LocalPosition.y
