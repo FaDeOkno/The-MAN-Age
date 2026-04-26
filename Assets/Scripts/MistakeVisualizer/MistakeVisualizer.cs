@@ -4,6 +4,7 @@ using UnityEngine;
 public class MistakeVisualizer : MonoBehaviour
 {
     [SerializeField] private int _mistakesCount = 1;
+    [SerializeField] private AudioSource _sound;
 
     private Animator _animator;
 
@@ -18,5 +19,8 @@ public class MistakeVisualizer : MonoBehaviour
             return;
 
         _animator.SetBool("IsActive", count >= _mistakesCount);
+
+        if (count > 0)
+            _sound.Play();
     }
 }

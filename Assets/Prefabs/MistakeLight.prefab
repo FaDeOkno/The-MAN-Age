@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MistakeVisualizer
   _mistakesCount: 1
+  _sound: {fileID: 6636361782861533151}
 --- !u!114 &969112512040801590
 MonoBehaviour:
   m_ObjectHideFlags: 0
