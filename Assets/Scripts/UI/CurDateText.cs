@@ -21,8 +21,7 @@ public class CurDateText : MonoBehaviour
             return;
 
         _nextUpdate = Time.time + 1f;
-        var date = new DateTime(GameManager.Year, DateTime.Now.Month, DateTime.Now.Day);
-        date.AddDays(GameManager.Instance.CurDayIndex);
+        var date = new DateTime(GameManager.Year, DateTime.Now.Month, DateTime.Now.Day).AddDays(GameManager.Instance.CurDayIndex);
 
         _tmp.SetText("Current date: " + date.ToString("dd.MM.yyyy"));
     }

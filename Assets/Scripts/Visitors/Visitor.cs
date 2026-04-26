@@ -116,8 +116,7 @@ public class Visitor : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IP
             date = new DateTime(date.Year - random.Next(species.MinAge, species.CommonAgeCap + 1), date.Month, date.Day);
         }
 
-        date.AddDays(random.Next(365));
-        BirthDate = date;
+        BirthDate = date.AddDays(random.Next(365));
 
         IsValid = Age >= species.MatureAge && HasId;
 
