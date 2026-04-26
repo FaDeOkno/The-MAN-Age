@@ -19,5 +19,6 @@ public class NewspaperPhoto : MonoBehaviour
         var face = day.NewsFacePrefab.GetComponent<Visitor>().BuildPseudoVisitor(sprite.sortingOrder, sprite.sortingLayerID, _layerPrefab);
         SceneManager.MoveGameObjectToScene(face.gameObject, SceneManager.GetActiveScene());
         face.transform.SetParent(transform, false);
+        _current = face.transform;
     }
 }
