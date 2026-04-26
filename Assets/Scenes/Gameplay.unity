@@ -401,6 +401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HandVisualsManager
   _setActiveEvent: {fileID: 11400000, guid: f5999dc580c3b524a8b0d3ea37978d1d, type: 2}
   _setInactiveEvent: {fileID: 11400000, guid: 5bb62d45011b5484bbbd5fca2a241394, type: 2}
+  _newspaperClosedEvent: {fileID: 11400000, guid: 97ae170c3cf7d9d4ca8008ff8a24f6b4, type: 2}
 --- !u!4 &145483292
 Transform:
   m_ObjectHideFlags: 0
@@ -5047,7 +5048,7 @@ MonoBehaviour:
     News: The checkpoint to the only night club in the city is now open again! Make
       sure to bring an ID if you're going there.
     NewsFacePrefab: {fileID: 7244033535008402025, guid: 534f38bc9d611764393443787c18a860, type: 3}
-    VisitorCount: 6
+    VisitorCount: 4
     InitialDialogue: {fileID: 11400000, guid: 3a011d53811938348ad7dc70484b2728, type: 2}
   - Species:
     - {fileID: 11400000, guid: a7beb227d083a0d4fbbb09d61eac906c, type: 2}
@@ -5056,7 +5057,7 @@ MonoBehaviour:
       Happy pub in Logdon drinking water. \nIf you see a small, bearded and probably
       angry man he might be a dwarf we're looking for."
     NewsFacePrefab: {fileID: 7244033535008402025, guid: e791847f8fd0ccb4495c6a9ee46caa92, type: 3}
-    VisitorCount: 8
+    VisitorCount: 6
     InitialDialogue: {fileID: 11400000, guid: 7f221da7cf484f14ca004c0069de37f5, type: 2}
   - Species:
     - {fileID: 11400000, guid: a7beb227d083a0d4fbbb09d61eac906c, type: 2}
@@ -5065,7 +5066,7 @@ MonoBehaviour:
     News: The Great Elf Confederation have opened their borders of the country. The
       unexpectedly big amount of elf migrants have already got a temporal ID.
     NewsFacePrefab: {fileID: 7244033535008402025, guid: e5eed158d50dd8b4c9d9a34aa37f0a84, type: 3}
-    VisitorCount: 8
+    VisitorCount: 6
     InitialDialogue: {fileID: 11400000, guid: 14d01c2be5d3351489f56fe4e846f7e4, type: 2}
   - Species:
     - {fileID: 11400000, guid: a7beb227d083a0d4fbbb09d61eac906c, type: 2}
