@@ -12,8 +12,8 @@ public class CreditsButton : MonoBehaviour
 
     public void OnPressed()
     {
-        _root.DOLocalMove(_rootOffset, 1.5f).SetEase(Ease.OutQuad);
-        _uiRoot.DOLocalMove(_uiOffset, 1.5f).SetEase(Ease.OutQuad);
+        _root.DOLocalMove(_rootOffset, 1.5f).SetEase(Ease.OutExpo);
+        _uiRoot.DOLocalMove(_uiOffset, 1.5f).SetEase(Ease.OutExpo);
         _musicEvent.Raise(this, _musicLayer);
     }
 }
