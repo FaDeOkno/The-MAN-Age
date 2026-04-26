@@ -5047,7 +5047,7 @@ MonoBehaviour:
     News: The checkpoint to the only night club in the city is now open again! Make
       sure to bring an ID if you're going there.
     NewsFacePrefab: {fileID: 7244033535008402025, guid: 534f38bc9d611764393443787c18a860, type: 3}
-    VisitorCount: 8
+    VisitorCount: 6
     InitialDialogue: {fileID: 11400000, guid: 3a011d53811938348ad7dc70484b2728, type: 2}
   - Species:
     - {fileID: 11400000, guid: a7beb227d083a0d4fbbb09d61eac906c, type: 2}
@@ -5056,7 +5056,7 @@ MonoBehaviour:
       Happy pub in Logdon drinking water. \nIf you see a small, bearded and probably
       angry man he might be a dwarf we're looking for."
     NewsFacePrefab: {fileID: 7244033535008402025, guid: e791847f8fd0ccb4495c6a9ee46caa92, type: 3}
-    VisitorCount: 12
+    VisitorCount: 8
     InitialDialogue: {fileID: 11400000, guid: 7f221da7cf484f14ca004c0069de37f5, type: 2}
   - Species:
     - {fileID: 11400000, guid: a7beb227d083a0d4fbbb09d61eac906c, type: 2}
@@ -5065,7 +5065,7 @@ MonoBehaviour:
     News: The Great Elf Confederation have opened their borders of the country. The
       unexpectedly big amount of elf migrants have already got a temporal ID.
     NewsFacePrefab: {fileID: 7244033535008402025, guid: e5eed158d50dd8b4c9d9a34aa37f0a84, type: 3}
-    VisitorCount: 14
+    VisitorCount: 8
     InitialDialogue: {fileID: 11400000, guid: 14d01c2be5d3351489f56fe4e846f7e4, type: 2}
   - Species:
     - {fileID: 11400000, guid: a7beb227d083a0d4fbbb09d61eac906c, type: 2}
@@ -5079,7 +5079,7 @@ MonoBehaviour:
       you are a vampire, you can get an ID card at the nearest passport office at
       working hours 12:00-18:00.'
     NewsFacePrefab: {fileID: 7244033535008402025, guid: c1328b81d189ae2448160a0aadb68146, type: 3}
-    VisitorCount: 18
+    VisitorCount: 10
     InitialDialogue: {fileID: 11400000, guid: e863af8a82c07f341ba41a7802323f34, type: 2}
   - Species:
     - {fileID: 11400000, guid: a7beb227d083a0d4fbbb09d61eac906c, type: 2}
@@ -5089,7 +5089,7 @@ MonoBehaviour:
     News: The escaped dwarf have not been found yet. Please, contact us if you see
       a dwarf drinking water instead of beer.
     NewsFacePrefab: {fileID: 7244033535008402025, guid: e791847f8fd0ccb4495c6a9ee46caa92, type: 3}
-    VisitorCount: 20
+    VisitorCount: 10
     InitialDialogue: {fileID: 0}
   _visitorsCap: 15
   _mistakeCap: 3
