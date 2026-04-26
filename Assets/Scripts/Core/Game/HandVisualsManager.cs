@@ -41,6 +41,10 @@ public class HandVisualsManager : MonoBehaviour
     public void OnVisitorChecked(Component sender, object data)
     {
         _hasId = false;
+
+        if (CurrentAnimation == HandAnimation.ShowingNews)
+            return;
+
         PlayAnimation(HandAnimation.None);
     }
 
