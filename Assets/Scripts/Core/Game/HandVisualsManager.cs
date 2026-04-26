@@ -6,6 +6,7 @@ public class HandVisualsManager : MonoBehaviour
 
     [SerializeField] private GameEvent _setActiveEvent;
     [SerializeField] private GameEvent _setInactiveEvent;
+    [SerializeField] private GameEvent _newspaperClosedEvent;
 
     public HandAnimation CurrentAnimation { get; private set; } = HandAnimation.None;
     private bool _awaitingAnimationFinish = false;
@@ -56,13 +57,16 @@ public class HandVisualsManager : MonoBehaviour
         if (_awaitingAnimationFinish)
             return;
 
+        _awaitingAnimationFinish = true;
+
         _setInactiveEvent.Raise(this, CurrentAnimation);
 
         if (CurrentAnimation is HandAnimation.None or HandAnimation.GettingId)
             _setActiveEvent.Raise(this, animation);
+        if (CurrentAnimation is HandAnimation.ShowingNews)
+            _newspaperClosedEvent.Raise(this, null);
 
         CurrentAnimation = animation;
-        _awaitingAnimationFinish = true;
     }
 
     public void OnAnimationFinished()
@@ -70,18 +74,18 @@ public class HandVisualsManager : MonoBehaviour
         if (!_awaitingAnimationFinish)
             return;
 
-        _awaitingAnimationFinish = false;
-
         if (CurrentAnimation == HandAnimation.GettingId)
         {
             #if DEBUG
             Debug.Log("Got ID");
             #endif
             _hasId = true;
+            _awaitingAnimationFinish = false;
             PlayAnimation(HandAnimation.ShowingId);
         }
         else
         {
+            _awaitingAnimationFinish = false;
             _setActiveEvent.Raise(this, CurrentAnimation);
         }
     }
