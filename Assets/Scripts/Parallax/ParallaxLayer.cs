@@ -13,7 +13,7 @@ public class ParallaxLayer : MonoBehaviour
 
     void LateUpdate()
     {
-        transform.position += (Camera.main.transform.position - _lastCameraPosition) * _parallaxFactor;
+        transform.localPosition += (Camera.main.transform.position - _lastCameraPosition) * _parallaxFactor;
         _lastCameraPosition = Camera.main.transform.position;
     }
 }
