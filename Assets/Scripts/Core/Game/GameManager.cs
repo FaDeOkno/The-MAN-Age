@@ -116,14 +116,18 @@ public class GameManager : MonoBehaviour
         _isFading = true;
         VisitorCheckedEvent.Raise(this, null);
 
+        var success = _currentVisitor.IsValid || _currentVisitor.AlwaysValid;
+        if (success)
+            _correctJingle.Play();
+        else
+            _mistakeJingle.Play();
+
         _currentVisitor.FadeColor();
         _currentVisitor.transform.DOMoveX(_currentVisitor.transform.position.x - 16, 2f).SetEase(Ease.InQuad)
             .OnComplete(() =>
             {
-                if (!_currentVisitor.IsValid && !_currentVisitor.AlwaysValid)
+                if (!success)
                     DoMistake();
-                else
-                    _correctJingle?.Play();
 
                 Destroy(_currentVisitor.gameObject);
                 NextVisitorOrEndDay();
@@ -138,14 +142,18 @@ public class GameManager : MonoBehaviour
         _isFading = true;
         VisitorCheckedEvent.Raise(this, null);
 
+        var success = !_currentVisitor.IsValid || _currentVisitor.AlwaysValid;
+        if (success)
+            _correctJingle.Play();
+        else
+            _mistakeJingle.Play();
+
         _currentVisitor.FadeColor();
         _currentVisitor.transform.DOMoveX(_currentVisitor.transform.position.x + 16, 2f).SetEase(Ease.InQuad)
             .OnComplete(() =>
             {
                 if (_currentVisitor.IsValid && !_currentVisitor.AlwaysValid)
                     DoMistake();
-                else
-                    _correctJingle?.Play();
 
                 Destroy(_currentVisitor.gameObject);
                 NextVisitorOrEndDay();
@@ -183,7 +191,6 @@ public class GameManager : MonoBehaviour
     private void DoMistake()
     {
         _mistakes++;
-        _mistakeJingle?.Play();
         MistakeEvent.Raise(this, _mistakes);
     }
 }
