@@ -43,14 +43,14 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
+        // if (Instance != null && Instance != this)
+        // {
+        //     Destroy(gameObject);
+        //     return;
+        // }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
         Invoke("NextVisitorOrEndDay", 2f);
     }
 
