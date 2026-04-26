@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8613191c23757b0448b96978be7f093f, type: 3}
   m_Name: Dwarf
   m_EditorClassIdentifier: Assembly-CSharp::Species
-  MatureAge: 18
-  MinAge: 10
-  CommonAgeCap: 40
-  RareAgeCap: 800
-  SpeciesName: Zombie
+  MatureAge: 80
+  MinAge: 40
+  CommonAgeCap: 130
+  RareAgeCap: 300
+  SpeciesName: Dwarf
   FaceLayers:
   - Sprites:
     - {fileID: -4934261235433634734, guid: 0cc021db261a5fe45931760c2bfd2dea, type: 3}
