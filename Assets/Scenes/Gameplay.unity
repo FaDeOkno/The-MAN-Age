@@ -4670,7 +4670,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 15.245467, y: 10.570588}
+    oldSize: {x: 15.229412, y: 10.570588}
     newSize: {x: 25.917295, y: 17.97}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5683,7 +5683,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 'Current date: 01.01.0101'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5c14f464aeec34c409093f95043ec591, type: 2}
   m_sharedMaterial: {fileID: 4656558834399183533, guid: 5c14f464aeec34c409093f95043ec591, type: 2}
@@ -5710,8 +5710,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5749,7 +5749,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -218.28976, y: 0, z: 4, w: -26.656622}
+  m_margin: {x: 63.7974, y: 0, z: 4, w: 2.291193}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
