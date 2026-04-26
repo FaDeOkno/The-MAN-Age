@@ -63,7 +63,11 @@ public class GameManager : MonoBehaviour
         if (_curVisitorIndex <= 1)
         {
             UpdateNewspaperEvent.Raise(this, _curDay);
-            SpawnIntroVisitor();
+
+            if (_curDay.InitialDialogue != null)
+                SpawnIntroVisitor();
+            else
+                SpawnVisitor();
         }
         else if (_mistakeCap <= _mistakes)
         {
