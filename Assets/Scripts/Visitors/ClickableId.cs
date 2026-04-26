@@ -22,4 +22,12 @@ public class ClickableId : MonoBehaviour, IPointerClickHandler
             _setTargetEvent.Raise(this, _originalFollowPoint);
         }
     }
+
+    public void Unfocus()
+    {
+        if (!IsActive)
+            return;
+
+        _setTargetEvent.Raise(this, _originalFollowPoint);
+    }
 }
