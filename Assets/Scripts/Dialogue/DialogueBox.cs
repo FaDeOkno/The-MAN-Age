@@ -47,13 +47,11 @@ public class DialogueBox : MonoBehaviour
                 continue;
             }
 
-            var charTime = current.PositionCurve.Evaluate(Mathf.Clamp01(Time.time - _startTime - (i * current.TypingSpeed)));
+            var charTime = current.ColorCurve.Evaluate(Mathf.Clamp01(Time.time - _startTime - (i * current.TypingSpeed)));
 
             var colorValue = Color.Lerp(current.StartColor, current.EndColor, charTime);
-            var offsetValue = Mathf.Lerp(current.StartOffset, current.EndOffset, charTime);
-            var scaleValue = charTime;
 
-            sb.Append($"<color=#{ColorUtility.ToHtmlStringRGBA(colorValue)}><voffset={offsetValue}em><size={scaleValue * 100}%>{current.DialogueText[i]}</color></voffset></size>");
+            sb.Append($"<color=#{ColorUtility.ToHtmlStringRGBA(colorValue)}>{current.DialogueText[i]}</color>");
         }
 
         _dialogueTextUI.text = sb.ToString();
